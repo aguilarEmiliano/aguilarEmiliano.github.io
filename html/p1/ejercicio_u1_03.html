@@ -1,0 +1,49 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:
+    Descripcion:
+-->
+</html lang="es">
+<head>
+    <title>plantilla</title>
+    <style>
+        ol {
+            counter-reset: item;
+        }
+        li{
+            display: block;
+            color: #182;
+        }
+        li:before {
+            content:counter(item,"-")"";
+            counter-increment:item;
+            color:rgb(72, 27, 27) ;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="">
+    <meta name="description"content="">
+    </head>
+    <body>
+        <hgroup>Diseño fisico de base de datos
+        <ol>
+            <li>Element 1 
+        <ol>
+            <li>sub Element 1</li>
+            <li>sub Element 2</li>
+            <li>sub Element 3</li>
+        </ol>
+            <li>Element 2</li>
+            <li>Element 3
+        <ol>
+            <li>sub Element 1</li>
+            <li> sub element 2</li>
+            <li>sub element 3</li>
+        </ol>
+        </li>
+    </ol>
+    </body>
+<html>
