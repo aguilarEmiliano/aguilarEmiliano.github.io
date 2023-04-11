@@ -1,331 +1,98 @@
-// Flatly 3.3.7
-// Bootswatch
-// -----------------------------------------------------
-
-$web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic" !default;
-@import url($web-font-path);
-
-// Navbar =====================================================================
-
-.navbar {
-  border-width: 0;
-
-  &-default {
-
-    .badge {
-      background-color: #fff;
-      color: $navbar-default-bg;
-    }
-  }
-
-  &-inverse {
-
-    .badge {
-      background-color: #fff;
-      color: $navbar-inverse-bg;
-    }
-  }
-
-  &-brand {
-    line-height: 1;
-  }
-}
-
-// Buttons ====================================================================
-
-.btn {
-  border-width: 2px;
-}
-
-.btn:active {
-  @include box-shadow(none);
-}
-
-.btn-group.open .dropdown-toggle {
-  @include box-shadow(none);
-}
-
-// Typography =================================================================
-
-.text-primary,
-.text-primary:hover {
-  color: $brand-primary;
-}
-
-.text-success,
-.text-success:hover {
-  color: $brand-success;
-}
-
-.text-danger,
-.text-danger:hover {
-  color: $brand-danger;
-}
-
-.text-warning,
-.text-warning:hover {
-  color: $brand-warning;
-}
-
-.text-info,
-.text-info:hover {
-  color: $brand-info;
-}
-
-// Tables =====================================================================
-
-table,
-.table {
-
-  a:not(.btn) {
-    text-decoration: underline;
-  }
-
-  .dropdown-menu a {
-    text-decoration: none;
-  }
-
-  .success,
-  .warning,
-  .danger,
-  .info {
-    color: #fff;
-
-    > th > a,
-    > td > a,
-    > a {
-      color: #fff;
-    }
-  }
-
-  > thead > tr > th,
-  > tbody > tr > th,
-  > tfoot > tr > th,
-  > thead > tr > td,
-  > tbody > tr > td,
-  > tfoot > tr > td {
-    border: none;
-  }
-
-  &-bordered > thead > tr > th,
-  &-bordered > tbody > tr > th,
-  &-bordered > tfoot > tr > th,
-  &-bordered > thead > tr > td,
-  &-bordered > tbody > tr > td,
-  &-bordered > tfoot > tr > td {
-    border: 1px solid $table-border-color;
-  }
-}
-
-// Forms ======================================================================
-
-.form-control,
-input {
-  border-width: 2px;
-  @include box-shadow(none);
-
-  &:focus {
-    @include box-shadow(none);
-  }
-}
-
-.has-warning {
-  .help-block,
-  .control-label,
-  .radio,
-  .checkbox,
-  .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label,
-  .form-control-feedback {
-    color: $brand-warning;
-  }
-
-  .form-control,
-  .form-control:focus {
-    border: 2px solid $brand-warning;
-  }
-
-  .input-group-addon {
-    border-color: $brand-warning;
-  }
-}
-
-.has-error {
-  .help-block,
-  .control-label,
-  .radio,
-  .checkbox,
-  .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label,
-  .form-control-feedback {
-    color: $brand-danger;
-  }
-
-  .form-control,
-  .form-control:focus {
-    border: 2px solid $brand-danger;
-  }
-
-  .input-group-addon {
-    border-color: $brand-danger;
-  }
-}
-
-.has-success {
-  .help-block,
-  .control-label,
-  .radio,
-  .checkbox,
-  .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label,
-  .form-control-feedback {
-    color: $brand-success;
-  }
-
-  .form-control,
-  .form-control:focus {
-    border: 2px solid $brand-success;
-  }
-
-  .input-group-addon {
-    border-color: $brand-success;
-  }
-}
-
-// Navs =======================================================================
-
-.nav {
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
-    border-color: transparent;
-  }
-}
-
-.pager {
-  a,
-  a:hover {
-    color: #fff;
-  }
-
-  .disabled {
-    &>a,
-    &>a:hover,
-    &>a:focus,
-    &>span {
-      background-color: $pagination-disabled-bg;
-    }
-  }
-}
-
-// Indicators =================================================================
-
-.close {
-  color: #fff;
-  text-decoration: none;
-  opacity: 0.4;
-
-  &:hover,
-  &:focus {
-    color: #fff;
-    opacity: 1;
-  }
-}
-
-.alert {
-
-  .alert-link {
-    color: #fff;
-    text-decoration: underline;
-  }
-}
-
-// Progress bars ==============================================================
-
-.progress {
-  height: 10px;
-  @include box-shadow(none);
-  .progress-bar {
-    font-size: 10px;
-    line-height: 10px;
-  }
-}
-
-// Containers =================================================================
-
-.well {
-  @include box-shadow(none);
-}
-
-a.list-group-item {
-
-  &.active,
-  &.active:hover,
-  &.active:focus {
-    border-color: $list-group-border;
-  }
-
-  &-success {
-    &.active {
-      background-color: $state-success-bg;
-    }
-
-    &.active:hover,
-    &.active:focus {
-      background-color: darken($state-success-bg, 5%);
-    }
-  }
-
-  &-warning {
-    &.active {
-      background-color: $state-warning-bg;
-    }
-    
-    &.active:hover,
-    &.active:focus {
-      background-color: darken($state-warning-bg, 5%);
-    }
-  }
-
-  &-danger {
-    &.active {
-      background-color: $state-danger-bg;
-    }
-    
-    &.active:hover,
-    &.active:focus {
-      background-color: darken($state-danger-bg, 5%);
-    }
-  }
-}
-
-.panel {
-  &-default {
-    .close {
-      color: $text-color;
-    }
-  }
-}
-
-.modal {
-  .close {
-    color: $text-color;
-  }
-}
-
-.popover {
-  color: $text-color;
-}
-    
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programación Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<script src="script/funciones.js"></script>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			  </button>
+			  <a class="navbar-brand" href="#">UPSLP</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sesion 1<span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#" id="p1_11" onclick="cargaPractica('html/p1/ejercicio_u1_01.html');return false;">Ejercicio 1.1</a></li>
+					<li><a href="#" id="p1_12" onclick="cargaPractica('html/p1/ejercicio_u1_02.html');return false;">Ejercicio 1.2</a></li>
+					<li><a href="#" id="p1_13" onclick="cargaPractica('html/p1/ejercicio_u1_03.html');return false;">Ejercicio 1.3</a></li>
+					<li><a href="#" id="p1_14" onclick="cargaPractica('html/p1/ejercicio_u1_04.html');return false;">Ejercicio 1.4</a></li>
+					<li><a href="#" id="p1_15" onclick="cargaPractica('html/p1/ejercicio_u1_05.html');return false;">Ejercicio 1.5</a></li>
+				  </ul>
+				</li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sesion 2<span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#" id="p2_11" onclick="cargaPractica('html/p2/ejercicio_1-1.html');return false;">Ejercicio 1.1</a></li>
+					<li><a href="#" id="p2_12" onclick="cargaPractica('html/p2/ejercicio_1-2.html');return false;">Ejercicio 1.2</a></li>
+					<li><a href="#" id="p2_13" onclick="cargaPractica('html/p2/ejercicio_1-3.html');return false;">Ejercicio 1.3</a></li>
+					<li class="divider"></li>
+					<li><a href="#" id="p2_2" onclick="cargaPractica('html/p2/ejercicio_2.html');return false;">Ejercicio 2</a></li>
+					<li class="divider"></li>
+					<li><a href="#" id="p2_3" onclick="cargaPractica('html/p2/ejercicio_3.html');return false;">Ejercicio 3</a></li>
+					<li class="divider"></li>
+					<li><a href="#" id="p2_41" onclick="cargaPractica('html/p2/ejercicio_4-1.html');return false;">Ejercicio 4.1</a></li>
+					<li><a href="#" id="p2_42" onclick="cargaPractica('html/p2/ejercicio_4-2.html');return false;">Ejercicio 4.2</a></li>
+					<li><a href="#" id="p2_43" onclick="cargaPractica('html/p2/ejercicio_4-3.html');return false;">Ejercicio 4.3</a></li>
+				  </ul>
+				</li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sesion 3<span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#" id="p3_11" onclick="cargaPractica('html/p3/ejercicio_3-1.html');return false;">Ejercicio 1.1</a></li>
+					<li><a href="#" id="p3_12" onclick="cargaPractica('html/p3/ejercicio_3-2.html');return false;">Ejercicio 1.2</a></li>
+					<li><a href="#" id="p3_13" onclick="cargaPractica('html/p3/ejercicio_3-3.html');return false;">Ejercicio 1.3</a></li>
+					<li><a href="#" id="p3_14" onclick="cargaPractica('html/p3/ejercicio_3-4.html');return false;">Ejercicio 1.4</a></li>
+					<li><a href="#" id="p3_15" onclick="cargaPractica('html/p3/ejercicio_3-5.html');return false;">Ejercicio 1.5</a></li>
+				  </ul>
+				</li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ejercicios<span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#" id="p1_1" onclick="cargaPractica('html/t/ejercicio_1-1.html');return false;">Parcial I - Tarea 1</a></li>
+					<li><a href="#" id="p1_2" onclick="cargaPractica('html/t/ejercicio_1-2.html');return false;">Parcial I - Tarea 2</a></li>
+					<li><a href="#" id="p1_3" onclick="cargaPractica('html/t/ejercicio_1-3.html');return false;">Parcial I - Tarea 3</a></li>
+					<li class="divider"></li>
+					<li><a href="#" id="p2_1" onclick="cargaPractica('html/t/ejercicio_2-1.html');return false;">Parcial II - Tarea 1</a></li>
+					<li class="divider"></li>
+					<li><a href="#" id="p3_1" onclick="cargaPractica('html/t/ejercicio_3-1.html');return false;">Parcial III - Tarea 1</a></li>
+					<li><a href="#" id="p3_2" onclick="cargaPractica('html/t/ejercicio_3-2.html');return false;">Parcial III - Tarea 2</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Ene-Jun '22</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div class="container-fluid text-center">    
+		  <div class="row content">
+			<div class="col-sm-2 sidenav">
+			</div>
+			<div class="col-sm-8 text-left" id="content" style="height: 800px"> 
+				<!-- Contenido -->
+			</div>
+			<div class="col-sm-2 sidenav">
+			</div>
+		  </div>
+		</div>
+		<footer class="container-fluid text-center">
+		  <p>0177111 - Ruben Cardenas Sanchez</p>
+		  <p>Ingeniería en Tecnologias de la Informacion</p>
+		</footer>
+	</body>
+</html>
