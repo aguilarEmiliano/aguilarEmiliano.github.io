@@ -1,0 +1,65 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:
+    Descripcion:
+-->
+</html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 03</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="Martes 2 de febrero 2023">
+    <meta name="description"content="String,Number,Boolean,BigInt,typeof">
+    <style>
+        .tit{background-color: black;color: aqua;}
+    </style>
+    </head>
+    <body>
+        <h1 class="tit">Javascript-Tipos de datos</h1>
+        <script>
+            //2.2.1.20 Tipos de Datos - Conversiones Implicitas//
+            let varBoolean=Boolean(true);
+            let varNumber=Number(5);
+            let varBigInt=BigInt(23);
+            let varString=String("UPSLP");
+            let varUnderfind; 
+            
+            alert
+            ("varBoolean es de tipo: " + typeof varBoolean +"; con valor de:" + varBoolean +
+            "\nvarNumber es de tipo: "+ typeof varNumber +"; con valor de:" + varNumber + 
+            "\nvarBigInt es de tipo: "+ typeof varBigInt +"; con valor de:" + varBigInt +
+            "\nvarString es de tipo: "+ typeof varString +"; con valor de:" + varString +
+            "\nvarunderfind es de tipo: "+ typeof varUnderfind + "y su valor es de: " + varUnderfind);
+
+
+
+
+            let tempString="1234";
+            let tempNumber=Number(varString);
+            let tempBigInt=BigInt(varNumber);
+            let varBoolean_1=Boolean(varBigInt);
+            
+            let varBoolean_2=Boolean(BigInt(Number(String(""))));
+
+            alert("varBoolean_1 es de tipo: "+ typeof varBoolean_1 +"y su valor es des : " + varBoolean_1 +
+            "\nvarBoolean_2 es de tipo: "+ typeof varBoolean_2 +"y su valor es de: " + varBoolean_2);
+
+
+            let datoString=String("1234");
+            let datoNumber=Number(4321);
+            let datoBigInt=BigInt(5555);
+            let datoBoolean=Boolean(5555);
+
+            alert
+            ("String + Number el resultado es: " + typeof(datoString + datoNumber)+ 
+            "\nString + BigInt el resultado es: " + typeof(datoString + datoBigInt)+
+            "\nString + Boolean el resultado es: " + typeof(datoString + datoBoolean)+
+            "\nNumber + BigInt el resultado es: "+ typeof(datoNumber + datoBoolean));
+
+        </script>
+
+
+    </body>
+<html>
