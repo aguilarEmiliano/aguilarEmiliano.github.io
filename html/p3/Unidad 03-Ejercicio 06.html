@@ -1,0 +1,63 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:
+    Descripcion:tareas del modulo 4
+-->
+</html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 06</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="">
+    <meta name="description"content="">
+    <style>
+        .tit{background-color: black;color: aqua;}
+    </style>
+    </head>
+    <body>
+        <h1 class="tit">javaScript-console.log</h1>
+        <script>
+                
+                /*4.1.1.11 Tareas: Condicionales*/ 
+
+    let varnum=prompt("introduce un valor para jugar ....","0");
+    varnum=varnum ? varnum: "0";
+
+                /*Tarea 1*/
+
+    if (varnum>90 && varnum<110){
+        alert("!Bingo!");
+    }else{
+        alert("fallaste");
+    }
+
+                /*Tarea 2*/
+    let varRes=""
+    varRes=(varnum>90) ?  "!loteria!" : "Perdiste";
+    alert(varRes);
+              
+    /*Tarea 3 */
+let firstNumber = Number(prompt("Introduce el primer número: "));
+let secondNumber = Number(prompt("Introduce el segundo número: "));
+let operand = prompt("Introduce el operando (+, -, * o /)");
+let result;
+
+if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
+    switch (operand) {
+        case "+": result = firstNumber + secondNumber; break;
+        case "-": result = firstNumber - secondNumber; break;
+        case "*": result = firstNumber * secondNumber; break;
+        case "/": result = firstNumber / secondNumber; break;
+        default: result = "Error: operando desconocido";
+    }
+} else {
+    result = "Error: al menos uno de los valores ingresados no es un número";
+}
+alert(result);
+
+        </script>
+
+    </body>
+<html>

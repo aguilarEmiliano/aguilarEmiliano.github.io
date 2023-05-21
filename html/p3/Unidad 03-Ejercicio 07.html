@@ -1,0 +1,99 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:10/05/2023
+    Descripcion:tareas 
+-->
+</html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 07</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="">
+    <meta name="description"content="ciclos,do,while,for">
+    <style>
+        .tit{background-color: black;color: aqua;}
+    </style>
+    </head>
+    <body>
+        <h1 class="tit">javaScript-console.log</h1>
+        <script>
+          let varNum;
+/*ciclo for*/
+for (varNum=100; varNum>=0; varNum-=10){
+    console.log("For >>> valor: " + varNum);
+    }
+    
+/*ciclo do-while */
+varNum=100;
+do{
+    console.log("Do-while >>> valor: " + varNum);
+    varNum -=10;
+}while (varNum >=0);
+
+/*ciclo while*/
+varNum =100;
+while(varNum >=0){
+    console.log("Do-while >>> valor: " + varNum);
+    varNum-=10
+}
+
+
+/*ciclo forinfinito*/
+varNum=100;
+for(;;){
+    console.log ("Forinfinito >> Valor :" + varNum);
+    if(varNum > 0)
+    varNum-=10;
+    else
+    break
+}
+/*Tarea No.2*/
+let varNum_1=Number(prompt("valor del inicial de la secuaencia: "));
+let varNum_2=Number(prompt("valor final de la secuencia: "));
+let varDelta=Number(prompt("valor del cambio (incremento/decremento): "));
+
+let banDec=false,bandInc=false;
+if(varNum_1 > varNum_2)banDec=true;
+else bandInc=true;
+
+if (Number.isNaN(varNum_1) || Number.isNaN(varNum_2)){alert("los valores deben ser numericos...");}
+else{
+    for (varNum=varNum_1;;){
+        console.log("forDinamico >> Valor :" + varNum);
+        if(banDec){varNum-= varDelta;if(varNum >= varNum_2)continue;else break;}
+        else{varNum +=varDelta; if (varNum<= varNum_2)continue;else break;}
+    }
+}
+        
+    /*Tarea 3 */
+    let firstNumber,secondNumber,operand,result,varcontinuar,varhistorial;
+    do{
+ firstNumber = Number(prompt("Introduce el primer número: "));
+ secondNumber = Number(prompt("Introduce el segundo número: "));
+ operand = prompt("Introduce el operando (+, -, * o /)");
+ result;
+
+if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
+    switch (operand) {
+        case "+": result = firstNumber + secondNumber; break;
+        case "-": result = firstNumber - secondNumber; break;
+        case "*": result = firstNumber * secondNumber; break;
+        case "/": result = firstNumber / secondNumber; break;
+        default: result = "Error: operando desconocido";
+    }
+} else {
+    result = "Error: al menos uno de los valores ingresados no es un número";
+}
+alert(result);
+varhistorial+="\n"+result;
+
+ varcontinuar = confirm("Deseas realizar otra operacion?");
+    }while(varcontinuar);
+    alert(varhistorial)
+
+        </script>
+
+    </body>
+<html>

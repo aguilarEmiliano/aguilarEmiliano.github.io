@@ -1,0 +1,48 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:05/05/2023
+    Descripcion:tareas modulo 3
+-->
+</html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 01</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="viernes 05 de mayo de 2023">
+    <meta name="description"content="prompt,if">
+    <style>
+        .tit{background-color: black;color: aqua;}
+    </style>
+    </head>
+    <body>
+        <h1 class="tit">Javascript-Operaciones e interacciones con el usuario</h1>
+        <script>
+            /* 3.3.1.7 Interación con el usuario - Tareas*/
+            let varanchura=prompt("introduce el valor de la anchura de la caja...","20");
+            let varAltura=prompt("Introduce el valor para la altura de la caja...","10");
+            let varLongitud=prompt("Intoduce el valor para la longitud de la caja ...","50");
+
+            let bandAncho,bandAlto,bandLargo;
+            let strError="Los siguientes valores no son adecuados:";
+
+            bandAlto=varAltura ? true:false;
+            bandAncho=varanchura ? true:false;
+            bandLargo=varLongitud ? true:false;
+
+            if (bandAncho)
+                strError += "\n-Anchura";
+            if (bandAlto)
+                strError +="\n-Altura";
+            if (bandLargo)
+                strError +="\n-Longitud";
+
+            if(bandAncho && bandAlto && bandLargo)
+                alert("El volumen de la caja es de: " + (varanchura * varAltura * varLongitud) + " unidades cúbicas." );
+            else
+                alert(strError);
+        </script>
+
+    </body>
+<html>

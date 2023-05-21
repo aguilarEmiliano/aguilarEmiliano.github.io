@@ -1,0 +1,104 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:
+    Descripcion:
+-->
+</html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 01</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="">
+    <meta name="description"content="">
+    <style>
+        .tit{background-color: black;color: aqua;}
+    </style>
+    </head>
+    <body>
+        <h1 class="tit">javaScript-Funciones & eventos </h1>
+        <h2>javaScript contenido en etiqueta</h2>
+        <button onclick="document.body.style.backgroundColor='lightgreen';"ondblclick="alert('hola mundo!!!');">cambia fondo</button>
+        <h2>javaScript contenido en funciones</h2>
+        <button id="btnColor">cambia fondo</button>
+        <button id="btnSaludar">Saluda a todos</button>
+        <script>
+            /*Modo basico*/
+            let button=document.getElementById("btnColor");
+            function funColor_A(){
+                document.body.style.backgroundColor='lightblue';
+            }
+            function funColor_B(){
+                document.body.style.backgroundColor='pink';
+            }
+            button.addEventListener('click',funColor_A);
+            button.addEventListener('dblclick',funColor_B);
+            /*Modo optinizado*/
+            document.getElementById("btnSaludar").addEventListener('click',()=>{
+                alert("Hola alumnos de la Upslp...\nTengan un buen dia.\n:)");
+            });
+        </script>
+        <h2>Eventos del mouse</h2>
+        <p style="background-color: aquamarine;"onmouseover="alert('acabas de pasar por ensima del Parrafo :D');"
+        onmouseout="alert('acabas de salir del parrafo :D');"
+        >Puedes pasar por ensima del parrafo o hacer click en el </p>
+        <h2>
+            Geolocalizacion 
+        </h2>
+        <button onclick="getlocation()" >Obtener Cordenadas </button>
+        <p id="data"></p>
+        <p id="map"></p>
+        <script>
+            function getlocation(){
+                if (navigator.geolocation){navigator.geolocation.getCurrentPosition(showposition);}
+                else {alert("Geolocalizacion no soporta por el navegador...")}
+            }
+            function showposition(position){
+                document.getElementById("data").innerHTML = "Latitud:" + position.coords.latitude;
+                 document.getElementById("data").innerHTML +="<br>Longitud:" + position.coords.longitude;
+                 var latLon=position.coords.longitude + "," + position.coords.longitude;
+                 var latLon='22.121929, -100.984327';//posicion de la Upslp
+                // var img_url="https://maps.googleapis.com/maps/api/staticmap?center=" + latLon +//
+                
+                 
+
+            }
+        </script>
+        <h2>google Maps</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12431.040557420038!2d-100.98893324328728!3d22.134725485802736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98bba4375a23%3A0x545f97e9a1f09d2a!2sParque%20Tangamanga%20I!5e0!3m2!1ses!2smx!4v1684345472845!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Almacenamiento</h2>
+        <button onclick="aumentacontador_1()">contador No.1</button>
+        <label>contador No.1: </label>
+        <input type="number" id="varContador1" placeholder="(contador No.1)">
+        <br>
+        <button onclick="aumentacontador_2()">contador No.2</button>
+        <label>contador No.2: </label>
+        <input type="number" id="varContador2" placeholder="(contador No.2)">
+        <script>
+            function aumentacontador_1(){
+            if(typeof(Storage)!="undefined"){
+                if(localStorage.contador_1){
+                    localStorage.contador_1++;
+                }
+                else{localStorage.contador_1=1;}
+                document.getElementById('varContador1').value=localStorage.contador_1;
+
+            }
+            else{
+                alert("Almacenamiento no soporta por el navegador...")}
+            }
+            
+            function aumentacontador_2() {  
+            if(typeof(Storage)!="undefined"){
+                if(sessionStorage.contador_2){sessionStorage.contador_2++;}
+                else{ sessionStorage.contador_2=1;}
+                document.getElementById('varContador2').value=sessionStorage.contador_2;
+            }
+            else{
+                alert("Almacenamiento no soporta por el navegador...")}
+            }
+                            
+            
+        </script>
+<html>

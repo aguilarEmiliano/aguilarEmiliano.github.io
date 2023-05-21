@@ -1,0 +1,112 @@
+<!DOCTYPE HTML> 
+<!--
+    Nombre: Emiliano Aguilar Tobias
+    Materia: Programacion web I
+    Fecha:
+    Descripcion:
+-->
+</html lang="es">
+<head>
+    <title>Unidad 03 Ejercicio 02</title>
+    <meta charset="utf-8">
+    <meta name="author"content="Emiliano Aguilar Tobias">
+    <meta name="revised"content="">
+    <meta name="description"content="">
+    </head>
+    <body>
+        <h1 class="Tit">JavaScript-Var & Alert</h1>
+        <script>
+        let X=100;
+        let Y=50;
+         
+          alert("valor de X (main): " + X);
+          alert("valor de Y (main): " + Y);
+      
+      function testFunction(){
+          let x=1;
+          let y=5;
+          alert("valor de X (Function): " + X);
+          alert("valor de Y (Function): " + Y);
+        
+      }
+      testFunction();
+      
+     
+       alert("valor de X (Main): " + X);
+       alert("valor de Y (Main): " + Y);
+      
+    </script>
+    <script>
+        /* 2.1.1.19 Variables - Tareas */
+
+        let Numrosa=70,precioR=8, importesRosas;
+        let cantidadlirios=50,CostoL=10,subtotalLirio;
+        let tulipanSubTotal=2, TulipanCantidad=120, Tulipanprecio=2;
+        let total=0;
+
+
+        function calcula(){
+        
+        importesRosas=precioR*Numrosa;
+        subtotalLirio=CostoL*cantidadlirios;
+        tulipanSubTotal=TulipanCantidad*Tulipanprecio;
+        
+        total=importesRosas+subtotalLirio+tulipanSubTotal
+                        }
+                        
+                        
+        function resultados(){
+        alert("Rosas >> precio:$"+ precioR +",cantidad:"+ Numrosa +",Valor:$"+ importesRosas +
+        "\nLirios >> precio:$"+ CostoL +", cantidad:"+ cantidadlirios +" ,Valor:$"+subtotalLirio +
+        "\ntulipanes >> precios:$"+ Tulipanprecio + " ,cantidad:"+ TulipanCantidad +" ,Valor:$"+ tulipanSubTotal+
+        "\nTotal >>$"+ total )
+    }
+    calcula();
+    resultados();
+
+    Numrosa-=20;
+    cantidadlirios-=30;
+
+    calcula();
+    resultados();
+
+    TulipanCantidad-=60;
+
+
+    calcula();
+    resultados();
+
+
+    /*
+    Rosas>> precio:$ +,cantidad: +,Valor:$ + 
+    Lirios>> precio:$, cantidad: ,Valor:$
+    tulipanes>> precios:$ ,cantidad: ,Valor:$
+    Total>>$1,300.00"
+    */
+    </script>
+    <script>
+        /* 2.1.1.30 Laboratotio:variables */
+        let Nombre, telefono, correo;
+        function imprime(str1,str2,str3){
+            alert("Nombre: "+ str1 + "\ntelefono: "+ str2 +  "\ncorreo: " + str3);
+        }
+
+        Nombre="Maxwell wright";
+        telefono="(0191) 719 6495";
+        correo=" Curabitur.egestas.nunc@nonummyac.co.uk";
+        imprime(Nombre,telefono,correo);
+
+        Nombre="Raja Villarreal	 ";
+        telefono=" 0866 398 2895	";
+        correo="posuere.vulputate@sed.com ";
+        imprime(Nombre,telefono,correo);
+
+        Nombre="Helen Richards	 ";
+        telefono="0800 1111	 ";
+        correo="libero@convallis.edu ";
+        imprime(Nombre,telefono,correo);
+
+
+    </script>
+    </body>
+</html>
