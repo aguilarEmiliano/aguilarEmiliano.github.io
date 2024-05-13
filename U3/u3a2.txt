@@ -1,0 +1,55 @@
+<!--
+    Unidad:parcial No.1
+    Descripcion:Ejercicio con listas
+    Fecha:22 de febrero del 2024
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UPSLP-Programacion Web I</title>
+    <link rel="stylesheet" href="ejemplo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="htitulo"class="vt323">Efecto con css</h1>
+  </body>
+  <p>
+    Tempor est ipsum amet labore eu cupidatat ullamco officia et nostrud in
+    consequat aute. Duis magna veniam exercitation irure. Est occaecat excepteur
+    do nostrud nostrud culpa.
+  </p>
+  <p>
+    Consectetur commodo aliquip pariatur exercitation mollit deserunt incididunt
+    nostrud fugiat proident consequat Lorem proident est. Et dolore eiusmod
+    reprehenderit ad tempor ut officia irure laborum mollit mollit sint do. Ut
+    ex enim esse aliquip cillum Lorem tempor velit labore aute sit. Adipisicing
+    dolore occaecat velit cupidatat tempor non tempor deserunt ullamco. Irure
+    dolor ullamco magna elit. Excepteur cupidatat consequat mollit do est
+    proident aliqua exercitation pariatur eu esse nostrud. Fugiat nulla magna
+    duis nisi duis cupidatat qui nisi nulla.
+  </p>
+  <p>
+    Culpa consectetur fugiat exercitation pariatur ad ut occaecat minim ut in
+    fugiat enim. Veniam qui mollit dolor do mollit cupidatat laborum aliqua et
+    sint. Nulla voluptate aliqua culpa ad aliquip qui mollit. Fugiat irure do
+    aute enim. Aute irure exercitation enim eu non enim nulla eu do et in irure
+    labore. Ea aliquip tempor Lorem laborum deserunt ad eu mollit.
+  </p>
+  <p>
+    Non tempor eiusmod magna tempor nulla et qui fugiat velit do Lorem
+    exercitation. Non non elit enim magna anim sit veniam exercitation ex Lorem.
+    Proident tempor labore enim qui aute excepteur laborum. Irure nulla mollit
+    minim deserunt cupidatat exercitation nostrud eu Lorem nulla. Duis excepteur
+    quis non minim consectetur. Magna excepteur amet dolore ad.
+  </p>
+  <p>
+    Laboris nisi exercitation nulla sunt labore elit ipsum exercitation deserunt
+    veniam esse. Quis qui nostrud nisi duis nulla exercitation. Mollit ad quis
+    ipsum laborum ad officia exercitation id esse pariatur ut minim. Eu id ut
+    exercitation consectetur labore incididunt culpa labore et voluptate sunt
+    laboris dolore. Ullamco irure quis pariatur laborum officia.
+  </p>
+</html>
