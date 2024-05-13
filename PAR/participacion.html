@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<title>Calculadora de Factorial</title>
+<style>
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+h2 {
+  background-color: aqua;
+  color: bisque;
+  
+}
+button{
+  background-color: rgb(255, 60, 0);
+  color: rgb(18, 228, 88);
+  
+}
+p{
+  background-color: rgb(228, 228, 228);
+  color: rgb(22, 76, 226);
+}
+label{
+  background-color: blueviolet;
+  color: bisque;
+}
+</style>
+<script>
+function calcularFactorial() {
+    var numero = parseInt(document.getElementById("numero").value);
+    var factorial = 1;
+    for (var i = 1; i <= numero; i++) {
+        factorial *= i;
+    }
+    document.getElementById("resultado").innerHTML = "El factorial de " + numero + " es: " + factorial;
+}
+</script>
+</head>
+<body style="background-image: url(pny.png);">
+<h2>Calculadora de Factorial</h2>
+<label for="numero">Ingrese un número:</label>
+<input type="number" id="numero">
+<button onclick="calcularFactorial()">Calcular Factorial</button>
+<p id="resultado"></p>
+</body>
+</html>

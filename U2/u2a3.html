@@ -1,0 +1,198 @@
+<!--
+    Unidad:parcial No.2
+    Descripcion:formularios
+    Fecha:06 de marzo del 2024
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UPSLP-Programacion Web I</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <h3>SelfService</h3>
+    <br />
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>SelfSelvice</legend>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">usuario </label>
+          <div class="col-md-4">
+            <input
+              id="textinput"
+              name="textinput"
+              type="text"
+              placeholder="Escribe Aquí tu Matricula"
+              class="form-control input-md"
+              required=""
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtPassWord"
+            >Contraseña:</label
+          >
+          <div class="col-md-5">
+            <input
+              id="txtPassWord"
+              name="txtPassWord"
+              type="password"
+              placeholder="Escribe Aquí tu contraseña"
+              class="form-control input-md"
+              required=""
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="#123"></label>
+          <div class="col-md-4">
+            <button id="#123" name="#123" class="btn btn-default">
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Redes sociales</legend>
+        <a href="www.facebook.com"> <img height="20px" src="unidad 2/fb.png" alt="Facebook"></a>
+        <a href="www.instagram.com"> <img height="20px" src="unidad 2/tw.png" alt="twiter"></a>
+        <a href="https://twitter.com/leomessisite?lang=es"> <img height="20px" src="unidad 2/ig.png" alt="Instagram"></a>
+      </fieldset>
+      <!DOCTYPE html>
+      <html lang="es">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tabla Anidada</title>
+      </head>
+      <body>
+      
+      <table border="1">
+        <caption>subway</caption>
+        <tbody>
+          <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            
+            <td>Celda 6</td>
+          </tr>
+          <tr>
+            <td>Celda 7</td>
+            <td>Celda 8</td>
+            <td>Celda 9</td>
+            <td>Celda 10</td>
+            <td>Celda 11</td>
+            <td>Celda 12</td>
+          </tr>
+          <tr>
+            <td>Celda 13</td>
+            <td>Celda 14</td>
+            <td>Celda 15</td>
+            <td>Celda 16</td>
+            <td>Celda 17</td>
+            <td>Celda 18</td>
+          </tr>
+          <tr>
+            <td>Celda 19</td>
+            <td>Celda 20</td>
+            <td>Celda 21</td>
+            <td>Celda 22</td>
+            <td>Celda 23</td>
+            <td>Celda 24</td>
+          </tr>
+          <tr>
+            <td>Celda 25</td>
+            <td>Celda 26</td>
+            <td>Celda 27</td>
+            <td>Celda 28</td>
+            <td>Celda 29</td>
+            <td>Celda 30</td>
+          </tr>
+          <tr>
+            <td>Celda 31</td>
+            <td>Celda 32</td>
+            <td>Celda 33</td>
+            <td>Celda 34</td>
+            <td>Celda 35</td>
+            <td>Celda 36</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Centro de impresiones</h3>
+      <form>
+        <fieldset>
+          <legend>Office Depot</legend>
+          <label>Selecione el archivo:</label>
+          <input type="file"><br>
+          <label>Selecciona el color de la tinta:</label>
+          <input type="color"><br>
+          <label>Cuantas impresiones necesitas?</label>
+          <input type="number"><br>
+          <label>Costo por hoja impresa:</label>
+          <input type="" value="$2.00" readonly><br>
+          <label>Entrega programada:</label><br>
+          <label>Fecha:</label><input type="datetime"><br>
+          <label>Hora:</label><input type="time"><br>
+          <input type="submit">
+          <input type="reset">
+        </fieldset>
+      </form>
+    <h3>sistema de calificaciones</h3>
+    <h5>Historial Academico</h5>
+    <form>
+      <fieldset>
+        <legend>0181763-Emiliano Aguilar Tobias</legend>
+        <label>Numero de identificacion:</label>
+        <input type="hidden"value="181763" disabled>
+        <ol>
+          <li>
+            semestre I
+            <ol type="I">
+              <li>Introduccion a las matematicas<input type="range" min="0"max="10"></li>
+              <li>Introduccion Fisica<input type="range" min="0"max="10"></li>
+              <li>Introduccion a la computacion<input type="range" min="0"max="10"></li>
+              <li>taller de certificacion<input type="range" min="0"max="10"></li>
+              <li>Curso de Nucleo Operativo<input type="range" min="0"max="10"></li>
+              <li>Ingles<input type="range" min="0"max="10"></li>
+              <li>Promedion:<input type="number" value="7"></li>
+            </ol>
+          </li>
+          <li>
+            Semestre II
+            <ol type="I">
+              <li>Materia 1 <meter min="0" max="100" value="75"></meter></li>
+              <li>Materia 2 <meter min="0" max="100" value="85"></meter></li>
+              <li>Materia 3 <meter min="0" max="100" value="70"></meter></li>
+              <li>Materia 4 <meter min="0" max="100" value="90"></meter></li>
+              <li>Materia 5 <meter min="0" max="100" value="95"></meter></li>
+              <li>Materia 6 <meter min="0" max="100" value="100"></meter></li>
+              <li>Promedion:<input type="number" value="7"></li>
+            </ol>
+          </li>
+          <li>
+            Semestre III
+            <ol type="I">
+              <li>Materia 1 <progress min="0" max="100" value="75"></progress></li>
+              <li>Materia 2 <progress min="0" max="100" value="85"></progress></li>
+              <li>Materia 3 <progress min="0" max="100" value="70"></progress></li>
+              <li>Materia 4 <progress min="0" max="100" value="90"></progress></li>
+              <li>Materia 5 <progress min="0" max="100" value="95"></progress></li>
+              <li>Materia 6 <progress min="0" max="100" value="100"></progress></li>
+              <li>Promedion:<input type="number" value="7"></li>
+            </ol>
+
+
+            </ol>
+          </li>
+        </ol>
+      </fieldset>
+    </form>
+    </form>
+  </body>
+</html>
