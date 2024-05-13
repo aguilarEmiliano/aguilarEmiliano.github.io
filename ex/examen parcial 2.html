@@ -1,0 +1,204 @@
+<!--
+    Unidad:parcial No.1
+    Descripcion:Ejercicio con listas
+    Fecha:22 de febrero del 2024
+-->
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-x5oc{background-color:#fe996b;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-0cjc{background-color:#67fd9a;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-266k{background-color:#9b9b9b;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-item{background-color:#00d2cb;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-1o19{background-color:#67fd9a;text-align:left;vertical-align:top}
+        .tg .tg-llyw{background-color:#c0c0c0;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-smvl{background-color:#fd6864;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-l23c{background-color:#67fd9a;border-color:inherit;text-align:left;vertical-align:middle}
+        .tg .tg-0pky{background-color:#8a2de0;border-color:inherit;text-align:left;vertical-align:middle}
+        </style>
+  <head>
+    <title>UPSLP-Programacion Web I-Examen Parcial </title>
+  </head>
+  <body>
+    <h1>Fomulario de registro</h1>
+    <form class="form-horizontal">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Speaker submission</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">name</label>  
+          <div class="col-md-4">
+          <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+            
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Email</label>  
+          <div class="col-md-4">
+          <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+            
+          </div>
+        </div>
+        
+        <!-- Multiple Radios (inline) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="radios">type of talk</label>
+          <div class="col-md-4"> 
+            <label class="radio-inline" for="radios-0">
+              <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+              Main stage
+            </label> 
+            <label class="radio-inline" for="radios-1">
+              <input type="radio" name="radios" id="radios-1" value="2">
+              Workshop
+            </label>
+          </div>
+        </div>
+        
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">T-shirt size</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="1">Extra Small</option>
+              <option value="2">Small</option>
+              <option value="3">Medium</option>
+              <option value="4">Large</option>
+              <option value="5">Extra large</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textarea">Abstract</label>
+          <div class="col-md-4">                     
+            <textarea class="form-control" id="textarea" name="textarea"></textarea>
+          </div>
+        </div>
+        
+        <!-- Multiple Checkboxes -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="checkboxes"></label>
+          <div class="col-md-4">
+          <div class="checkbox">
+            <label for="checkboxes-0">
+              <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+              I'am actually avaliable the date of the talk
+            </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton"></label>
+          <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-info">Summit</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        <br><br>
+        <h1>Triangulo de Pascal</h1>
+
+
+
+        <br><br>
+        <h1>Quimica Inorganica</h1>
+        <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-llyw" colspan="3"></th>
+                <th class="tg-llyw" colspan="2"><strong>Nomenclatura</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-llyw"><strong>Tipos de compuestos</strong></td>
+                <td class="tg-llyw"><strong>Definición</strong></td>
+                <td class="tg-llyw"><strong>Formulacion</strong></td>
+                <td class="tg-llyw"><strong>IUPAC</strong></td>
+                <td class="tg-llyw"><strong>Tradicional</strong></td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">óxidos</td>
+                <td class="tg-0cjc">O<sup>-2</sup>+ EL<sup>+</sup></td>
+                <td class="tg-item">Fe<sub>2</sub>O<sub>3</sub></td>
+                <td class="tg-0pky">Oxido de Hierro (II)</td>
+                <td class="tg-smvl">Oxido Ferrico</td>
+              </tr>
+              <tr>
+                <td class="tg-llyw" rowspan="2">Hidruros</td>
+                <td class="tg-0cjc">H<sup>-1</sup>+Me<sup>+</sup><br></td>
+                <td class="tg-item" rowspan="2">CoH<sub>2</sub></td>
+                <td class="tg-0pky">Hidruro de cobalto(II)</td>
+                <td class="tg-smvl">Hidruro cobaltoso</td>
+              </tr>
+              <tr>
+                <td class="tg-0cjc">H<sup>+1</sup>+NoMe<sup>-</sup></td>
+                <td class="tg-smvl" colspan="2">Nitruro de Hidrogeno</td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">hidróxidos</td>
+                <td class="tg-l23c">Me<sup>+</sup>(OH)<SUP>-1</SUP></td>
+                <td class="tg-item">Au(OH)<sub>3</sub></td>
+                <td class="tg-0pky">Hisroxido de Oro(III)</td>
+                <td class="tg-smvl">Hidroxido Aurico</td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">Ácidos Hidracidos</td>
+                <td class="tg-0cjc">H<sup>+1</sup>+Nome<sup>-</sup></td>
+                <td class="tg-item">HCL</td>
+                <td class="tg-smvl" colspan="2">Acido Clorhidico</td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">Sales Neuttras</td>
+                <td class="tg-0cjc">Oxido-H+Me</td>
+                <td class="tg-item">k<sub>2</sub>SO<sub>4</sub></td>
+                <td class="tg-0pky">tetrasusfalto de hisrogeno</td>
+                <td class="tg-smvl">Sulfato de Hidrogeno</td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">Sales Acidas</td>
+                <td class="tg-0cjc">Oxacido +Me</td>
+                <td class="tg-item">AL(HSO<SUB>4</SUB>)<SUB>3</SUB></td>
+                <td class="tg-0pky">tetrasusfalto de Hidrogeno y Alumnio</td>
+                <td class="tg-smvl">Sulfato de acido de aluminio</td>
+              </tr>
+              <tr>
+                <td class="tg-llyw" rowspan="2">peróxidos</td>
+                <td class="tg-0cjc"><sup>-2</sup>+Me<sup>+</sup></td>
+                <td class="tg-item" rowspan="2">CaO<sub>2</sub></td>
+                <td class="tg-smvl" colspan="2" rowspan="2">Peroxido deCalcio</td>
+              </tr>
+              <tr>
+                <td class="tg-1o19"></td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">cationes</td>
+                <td class="tg-0cjc"></td>
+                <td class="tg-item" rowspan="2">metrog</td>
+                <td class="tg-266k"></td>
+                <td class="tg-x5oc" rowspan="2"></td>
+              </tr>
+              <tr>
+                <td class="tg-llyw">aniones</td>
+                <td class="tg-0cjc"></td>
+                <td class="tg-266k"></td>
+              </tr>
+            </tbody>
+            </table>
+  </body>
+</html>
