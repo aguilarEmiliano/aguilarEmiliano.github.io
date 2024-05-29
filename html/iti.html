@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programaci&oacute;n Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		input:checked + details,
+      	details:has(input:checked) {
+        max-height: 1200px; 
+      	}
+		.back-to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 20px;
+    	font-size: 24px;
+    	display: none;
+    	background-color: #007bff;
+    	color: #fff;
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 40px;
+    	text-decoration: none;
+  		}
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		details {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        background: white;
+        transition: max-height 400ms ease-out;
+        max-height: 4rem;
+        overflow: hidden; 
+      }
+
+      
+
+      input {
+        display: none; 
+      }
+
+      
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: #f9a30f;
+        color: #fff;
+        height: 4rem; 
+      }
+
+      label:hover {
+        cursor: pointer;
+      }
+
+      label::before {
+        content: "⏵";
+        font-size: 1.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        transition: rotate 200ms 400ms ease-out;
+      }
+	  
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <h1 style="text-align: center; font-weight: bold;" class="animated-text">Ingeniería en Tecnologías de la Información (ITI)</h1>
+        <div class="container">
+			<div class="card"><a style="text-decoration: none; color: black;" href="#descripcion" target="_self">Descripci&oacute;n</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#plan" target="_self">Plan de Estudios</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#infra" target="_self">Infraestructura</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#campo" target="_self">Campo de Trabajo</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#cont" target="_self">Contacto</a></div>
+		</div><br>
+		<img src="../imagenes/iti.png" width="100%" height="50%">
+		<a href="https://www.google.com.mx/maps/@22.1219314,-100.9840534,3a,75y,90.16h,71.52t/data=!3m6!1e1!3m4!1sAF1QipPFzW4L8_xflOo-lpJsyFOgyuTDa5j5sRGJu9V_!2e10!7i8000!8i4000?entry=ttu" target="_blank"><img src="../imagenes/iti1.png" width="100%" height="100px"></a>
+		<div class="columna-izquierda"><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Nivel:</h3>
+			<p>Licenciatura</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Título otorgado:</h3>
+			<p>Ingeniería en Tecnologías de la Información</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Duraci&oacute;n</h3>
+			<p>9 semestres</p>
+		</div>
+		<div class="columna-derecha"><img src="../imagenes/iti2.png" width="70%"></div><br><br>
+		<center><br><br><div class="columna-izquierda"><br><br><br><h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="descripcion">Descripci&oacute;n carrera:</h3></div></center>
+		<p>El Ingeniero en Tecnologías de la Información aplica sus sólidos conocimientos al diseño, desarrollo e instrumentación de soluciones informáticas que requieren las organizaciones, atendiendo las necesidades humanas derivadas de la interacción con la computadora. Es competente para mantener equipos de cómputo operando eficientemente y ofrece al usuario soluciones integrales a los problemas asociados con el área computacional.</p>
+		<div class="columna-izquierda">
+			<img src="../imagenes/iti3.png" width="60%" class="img-1">
+		</div>
+		<div class="columna-derecha">
+            <p>Los Objetivos del Plan de Estudios de la Ingeniería en Tecnologías de la Información que ofrece la Universidad Politécnica de San Luis Potosí enfatizan siete aspectos importantes en la formación del Ingeniero, que le confieren una sólida preparación para desempeñarse exitosamente en el mundo laboral:</p>
+			<br><ol>
+				<li>Adquisición y empleo adecuado de los conocimientos de las Matemáticas y las Ciencias Básicas, como fundamentos para un ejercicio amplio de la profesión;</li><br>
+				<li>Manejo diestro de los conocimientos de las tecnologías;</li><br>
+				<li>Uso y desarrollo de la tecnología de la información para la innovación;</li><br>
+				<li>Aplicación de métodos de investigación para identificar problemas y desarrollar soluciones de manera independiente;</li><br>
+				<li>Formación integral con uso adecuado del idioma español, el dominio del idioma inglés, el desarrollo del pensamiento lógico y de habilidades para el autoestudio;</li><br>
+				<li>Formación flexible apoyado en un Sistema de Tutorías para el uso eficiente del tiempo y la recuperación del conocimiento adquirido a través de otros medios;</li><br>
+				<li>La adquisición de bases teóricas para continuar con estudios de postgrado.</li>
+			</ol>
+		</div>
+		<div><p>Al finalizar los alumnos de Ingeniería en Tecnologías de la Información deben realizar una residencia profesional de 480 horas, donde ponen en práctica lo que se aprendió en las aulas; aunque en muchas de las materias de Ingeniería en Tecnologías de la Información se deben realizar proyectos finales de aplicación en la industria y la investigación que permitan un acercamiento vivencial temprano en su carrera.</p></div>
+		<p>Se tiene también la actividad del capítulo estudiantil de la ACM (Association for Computing Machinery), que tiene como finalidad el fomentar la ética profesional en los alumnos, contribuir al desarrollo de las capacidades de los estudiantes mediante los diferentes concursos de programación promovidos por ACM, y mejorar la calidad de la educación en la institución mediante la realización y participación en los diferentes talleres, conferencias y congresos organizados por ACM. </p>
+		<p>Los alumnos de Ingeniería en Tecnologías de la Información pueden ser miembros del club de robótica en el cual los estudiantes podrán aplicar sus conocimientos de matemáticas, física, programación de computadoras, habilidades como análisis, lógica y capacidad de abstracción para elaborar rutinas sofisticadas que generen movimientos en los robots LEGO.</p>
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Mision Educativa:</h3>
+		<p>“El Programa Educativo de la carrera de Ingeniería en Tecnologías de la Información está comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del conocimiento en los campos de desarrollo e implementación de software, ofreciendo una solución integral a los problemas asociados con el área computacional. Está comprometido con la sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación aplicada involucrando alumnos en la solución de problemas tecnológicos de la sociedad. “ </p>
+		<cite>ProPE 2016-2017 </cite>
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Visión del Programa Educativo:</h3>
+		<p>El PE de Ingeniería en Tecnologías de la Información entregarán a la sociedad alumnos formados con los más altos estándares profesionales.</p>
+		<ul>
+			<li>Egresados que tienen en su haber competencias pertinentes a las necesidades de su entorno, y son reconocidos en el ámbito laboral por su alto desempeño y calidad personal;   </li>
+			<li>Un porcentaje significativo de ellos realiza estudios de posgrado en el país o en el extranjero.   </li>
+			<li>Contarán con certificaciones de importancia en el área, actuales y con reconocimiento internacional.   </li>
+			<li>Estarán certificados en el dominio del idioma inglés por el British Council.   </li>
+			<li>Tendrán experiencia práctica adquirida en los laboratorios, en el estudio de casos y en su estancia profesional</li>
+			<li>Serán hábiles en el manejo de las nuevas tecnologías y reconocerán el proceso de aprendizaje como una necesidad permanente.  </li>
+		</ul>
+		<br><br><p>El PE de Ingeniería en Tecnologías de la Información tendrá una planta académica consolidada basada en los más altos estándares.   </p>
+		<ul>
+			<li>El 80% de los PTC tendrán el reconocimiento al Perfil PROMEP, el 89% serán doctores y el 44% de ellos pertenecerá al SNI. </li>
+			<li>Mantendrán una metodología de trabajo colegiado y participarán activamente en cuerpos académicos que participan en redes de investigación nacionales e internacionales.    </li>
+			<li>Los proyectos serán financiados por Instituciones públicas y privadas, permitiendo obtener recursos adicionales.   </li>
+			<li>El PE estará evaluado por CIEES.    </li>
+			<li>Estará comprometido con la rendición de cuentas respecto de su calidad y de los ingresos federales, estatales y adicionales que obtiene.   </li>
+			<li>Los egresados tendrán una estrecha relación con la Universidad a través de cursos, diplomados, especialidades y posgrado.  </li>
+		</ul>
+		<cite>ProPE 2016-2017</cite>
+		<br><br><p>Los Objetivos del Plan de Estudios de la Ingeniería en Tecnologías de la Información que ofrece la Universidad Politécnica de San Luis Potosí enfatizan siete aspectos importantes en la formación del Ingeniero, que le confieren una sólida preparación para desempeñarse exitosamente en el mundo laboral: </p>
+		<ol>
+			<li>Adquisición y empleo adecuado de los conocimientos de las Matemáticas y las Ciencias Básicas, como fundamentos para un ejercicio amplio de la profesión; </li><br>
+			<li>Manejo diestro de los conocimientos de las tecnologías; </li><br>
+			<li>Uso y desarrollo de la tecnología de la información para la innovación; </li><br>
+			<li>Aplicación de métodos de investigación para identificar problemas y desarrollar soluciones de manera independiente; </li><br>
+			<li>Formación integral con uso adecuado del idioma español, el dominio del idioma inglés, el desarrollo del pensamiento lógico y de habilidades para el autoestudio; </li><br>
+			<li> Formación flexible apoyado en un Sistema de Tutorías para el uso eficiente del tiempo y la recuperación del conocimiento adquirido a través de otros medios; </li><br>
+			<li>La adquisición de bases teóricas para continuar con estudios de postgrado. </li><br>
+		</ol>
+		<center><iframe width="560" height="315" class="img-1" src="https://www.youtube.com/embed/j3zM1cYiYc0?si=jwWXBzMtE2E0A7XJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+		<img src="../imagenes/azul.png" width="100%" height="10px">
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="plan">Plan de Estudios:</h3>
+		<input type="checkbox" name="detail-one" id="detail-one" />
+		<details open>
+			<summary>
+			  <label for="detail-one">Consulta Plan de Estudios</label>
+			</summary>
+			<div class="content">
+			  <img src="../imagenes/iti4.png" width="100%" alt=""/>
+			</div>
+		  </details><br>
+		  <img src="../imagenes/azul.png" width="100%" height="10px">
+		  <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="infra">Infraestructura / Recursos:</h3><br>
+		  <a href="laboiti.html" style="color: chocolate;"><h2 style="color: #cb5115; font-weight: bold; font-size: 35px; text-align: center;">LABORATORIOS ITI</h2></a>
+		  <center><img src="../imagenes/iti18.png" width="80%" class="img-1"></center>
+		  <br><p>Los estudiantes de la carrera de Ingeniería en Tecnologías de la Información cuentan con acceso a la siguiente infraestructura: </p>
+		  <br><p>Edificio del Centro de Nuevas Tecnologías </p>
+		  <br><ul>
+			<li>Laboratorio de Redes (CCNA-Cisco)</li><br>
+			<li>Laboratorio de Telecomunicaciones</li><br>
+			<li>Laboratorio de Tecnologías SUN</li><br>
+			<li>Centro de Software Libre</li><br>
+			<li>Laboratorio de Cableado Estructurado</li><br>
+			<li>Laboratorio de Arquitectura de Computadoras</li><br>
+			<li>Laboratorios especializados: Ingeniería de Software, Seguridad Informática, Comercio, Electrónico, Procesamiento Digital
+				Software: Maple, Matlab, Interactive Physics, IBM Rational Rose, Oracle, Cisco Packet Tracer, Microsoft Campus Agreement, Software para el aprendizaje del Inglés, Solaris, Java, entre otros.</li><br>
+		  </ul>
+		  <img src="../imagenes/azul.png" width="100%" height="10px">
+		  <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Certificaciones:</h3><br>
+		  <center><img src="../imagenes/iti19.png" width="50%"></center>
+		  <ul style="background-color: #4d9dc0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+			<li>Oracle Certified Associate, MySQL 5</li><br>
+			<li>Oracle Certified Professional, MySQL 5.6 Developer</li><br>
+			<li>Oracle Certified Associate, Java SE 5/SE 6</li><br>
+			<li>Oracle Certified Professional, Java SE 6 Programmer</li><br>
+			<li>Oracle Certified Associate, Java SE 7 Programmer</li><br>
+			<li>Oracle Certified Associate, Oracle Solaris 10 Operating System</li><br>
+			<li>Oracle Certified Professional, Oracle Solaris 10 System Administrator</li><br>
+			<li>Oracle Certified Associate, Oracle Solaris 11 System Administrator</li><br>
+		  </ul>
+		  <center><img src="../imagenes/iti20.png" width="30%"></center>
+		  <ul style="background-color: #c09c4d; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+			<li>Cisco Certified Entry Networking Technician (CCENT)</li><br>
+			<li>Cisco Certified Network Associate (CCNA)</li><br>
+		  </ul>
+		  <img src="../imagenes/azul.png" width="100%" height="10px"> 
+		  <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Logros / Distinciones:</h3><br>
+		  <center><img src="../imagenes/iti21.png" width="90%"></center><br>
+		  <center><img src="../imagenes/iti22.png" width="90%" class="img-1"></center><br>
+		  <br><img src="../imagenes/azul.png" width="100%" height="10px"> 
+		  <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Perfil de egreso:</h3><br>
+		  <p>El Ingeniero en Tecnologías de la Información tiene los conocimientos necesarios de software y hardware en interacción con el factor humano, para ofrecer una solución integral a los problemas asociados con el área computacional.</p>
+		  <img src="../imagenes/azul.png" width="100%" height="10px"> 
+		  <br><h3 id="campo" style="color: rgb(3, 3, 172); font-weight: bold;">Campo de trabajo:</h3>
+		  <p>Un Ingeniero en Tecnologías de la Información tiene la posibilidad de desarrollarse en industrias dedicadas tanto a la transformación como a los servicios, siempre buscando la mejora. Por lo anterior puede contratarse en: </p>
+		  <center><img src="../imagenes/iti23.png"></center>
+		  <br><center><img src="../imagenes/sege.png" class="img-1" width="20%"></center>
+		  <br><br><center><img src="../imagenes/iti24.png" ></center>
+		  <img src="../imagenes/azul.png" width="100%" height="10px"> 
+		  <br><h3 style="color: rgb(3, 3, 172); font-weight: bold; text-align: center;" id="cont">Contacto</h3><br>
+		<p style="text-align: center; font-weight: bold; color: black;">Coordinación de Ingeniería en Tecnologías de la Información</p>
+		<p style="text-align: center; font-weight: bold; color: black;">Karina Hernández Leyva</p>
+		<p style="text-align: center;">Asistente de Ingeniería en Tecnologías de la Información</p>
+		<p style="text-align: center;">Teléfono: (444) 870 – 21 – 00 Ext. 223</p>
+		<p style="text-align: center; font-weight: bold; color: black;">Dr. Juan Antonio Cabrera</p>
+		<p style="text-align: center;">Coordinador de Ing. en Tecnologías de la Información</p>
+		<p style="text-align: center;">iti@upslp.edu.mx</p>
+		  <a href="#" class="back-to-top">↑</a>
+    </body>
+</html>

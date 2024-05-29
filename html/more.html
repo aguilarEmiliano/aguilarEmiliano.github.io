@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programaci&oacute;n Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		input:checked + details,
+      	details:has(input:checked) {
+        max-height: 1200px; 
+      	}
+		.back-to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 20px;
+    	font-size: 24px;
+    	display: none;
+    	background-color: #007bff;
+    	color: #fff;
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 40px;
+    	text-decoration: none;
+  		}
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		details {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        background: white;
+        transition: max-height 400ms ease-out;
+        max-height: 4rem;
+        overflow: hidden; 
+      }
+
+      
+
+      input {
+        display: none; 
+      }
+
+      
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: #f9a30f;
+        color: #fff;
+        height: 4rem; 
+      }
+
+      label:hover {
+        cursor: pointer;
+      }
+
+      label::before {
+        content: "⏵";
+        font-size: 1.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        transition: rotate 200ms 400ms ease-out;
+      }
+	  
+      .animated-image {
+    width: 150px;
+    height: 150px;
+    animation: rotateAnimation 5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <h1 style="text-align: center; font-weight: bold; font-size: 60px;" class="blinking-text">Más información</h1><br>
+        <a href="https://ssu.upslp.edu.mx/ss//Admissions/Inquiry.aspx?inquiryformid=4" target="_blank"><center><img src="../imagenes/more.png" width="90%" class="img-1"></center></a>
+        <br><h3 style="color: rgb(3, 3, 172); font-weight: bold; text-align: center;">Contacto</h3><br>
+        <p style="text-align: center;">Teléfono: (444) 870 – 21– 00 Ext. 263 y 265</p>
+        <p style="text-align: center; font-weight: bold; color: black;">Urbano Villalón #500 Col. La Ladrillera</p>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programación Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		details {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        background: white;
+        transition: max-height 400ms ease-out;
+        max-height: 4rem;
+        overflow: hidden; 
+      }
+
+      
+
+      input {
+        display: none; 
+      }
+
+      
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: #444;
+        color: #fff;
+        height: 4rem; 
+      }
+
+      label:hover {
+        cursor: pointer;
+      }
+
+      label::before {
+        content: "⏵";
+        font-size: 1.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        transition: rotate 200ms 400ms ease-out;
+      }
+
+      div.content {
+        padding: 0 10px;
+        border: 2px solid #888;
+      }
+
+      input:checked + details,
+      details:has(input:checked) {
+        max-height: 1200px; 
+      }
+	  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  
+    </style>
+    <body>
+        <h1 style="text-align: center; font-weight: bold; background-color: rgb(240, 161, 13);  color: white;">--- Proceso de Ingreso ---</h1><br>
+        <center><img src="../imagenes/pi.png" width="100%" class="img-2"></center>
+        <br><br><ul style="background-color: #e59f08; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+            <p>Importante</p>
+			<li>Es responsabilidad del aspirante cumplir con todos los pasos del procesos de ingreso, apegandose a las indicaciones y fechas establecidas.</li><br>
+			<li>Es responsabilidad del aspirante consultar, de manera frecuente, los diversos canales de comunicacion de la Universidad para mantenerse informado sobre el proceso de ingreso.</li><br>
+			<li>Para que el tramite sea válido debe ser realizado directamente por el aspirante.</li>
+		</ul><br><br>
+    <div class="columna-izquierda">
+      &nbsp;&nbsp;<img src="../imagenes/po1.png" class="img-1" width="50%">
+    </div>
+    <div class="columna-derecha">
+      <p>Ingresar a https://ssu.upslp.edu.mx/ss/Admissions/ApplicationSelectEnabledForm.aspx  y contestar la solicitud de nuevo ingreso, usando mayúsculas, minúsculas y acentos, de lo contrario, no será válida.</p>
+      <p><strong>Importante: </strong> Elegir la carrera que sea de su interés y contestar correctamente todos los campos. Una vez enviada, no se podrán realizar cambios.</p>
+    </div>
+<br><br>
+    <br><div class="columna-izquierda"><br><br>
+      &nbsp;&nbsp;<img src="../imagenes/po2.png" class="img-1" width="50%">
+    </div><br>
+    <div class="columna-derecha"><br>
+      <p>Descargar la referencia bancaria para realizar el pago correspondiente al examen, en los bancos disponibles. Dicho pago se puede realizar en cajero automático o por medio de las aplicaciones de los bancos disponibles, realizándolo como pago de servicios. Verificar que el número de la referencia bancaria y el monto estén capturados correctamente.</p>
+      <p><strong>Importante: </strong> La referencia es personal e intransferible, y la responsabilidad de su manejo es exclusiva del titular.</p>
+      <p><strong>Nota: Una vez realizado el pago, no habrá reembolsos. Es responsabilidad del aspirante cumplir con los pasos del proceso de ingreso 2024, respetando las indicaciones y fechas establecidas.</strong></p>
+    </div><br>
+    <br><br>
+    <br><center><img src="../imagenes/po3.png" class="img-1" width="90%"></center>
+   <br> <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Contacto:</h3><br>
+   <p style="text-align: center;">Teléfono: (444) 870 – 21 – 00 Ext. 225</p>
+   <p style="text-align: center;">Urbano Villalón #500 Col. La Ladrillera</p>
+
+        <a href="#" class="back-to-top">↑</a>
+
+    </body>
+</html>

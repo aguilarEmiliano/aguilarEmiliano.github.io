@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programaci&oacute;n Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+         .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		input:checked + details,
+      	details:has(input:checked) {
+        max-height: 1200px; 
+      	}
+		.back-to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 20px;
+    	font-size: 24px;
+    	display: none;
+    	background-color: #007bff;
+    	color: #fff;
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 40px;
+    	text-decoration: none;
+  		}
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+        details {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        background: white;
+        transition: max-height 400ms ease-out;
+        max-height: 4rem;
+        overflow: hidden; 
+      }
+
+      
+
+      input {
+        display: none; 
+      }
+
+      
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: #f9a30f;
+        color: #fff;
+        height: 4rem; 
+      }
+
+      label:hover {
+        cursor: pointer;
+      }
+
+      label::before {
+        content: "⏵";
+        font-size: 1.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        transition: rotate 200ms 400ms ease-out;
+      }
+	  
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <h1 style="text-align: center; font-weight: bold;" class="animated-text">Ingeniería en Telemática (ITEM)</h1>
+        <div class="container">
+			<div class="card"><a style="text-decoration: none; color: black;" href="#descripcion" target="_self">Descripci&oacute;n</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#plan" target="_self">Plan de Estudios</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#infra" target="_self">Infraestructura</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#campo" target="_self">Campo de Trabajo</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#cont" target="_self">Contacto</a></div>
+		</div><br>
+		<img src="../imagenes/item.png" width="100%" height="40%">
+        <a href="https://www.google.com.mx/maps/@22.1220544,-100.9840532,3a,90y,348.06h,83.44t/data=!3m7!1e1!3m5!1sAF1QipPha_EbBEczRlX3C4tpHM4kySfcwVVG4IlXwb6V!2e10!3e12!7i8000!8i4000?entry=ttu" target="_blank"><img src="../imagenes/item1.png" width="100%" height="100px"></a>
+        <div class="columna-izquierda"><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Nivel:</h3>
+			<p>Licenciatura</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Título otorgado:</h3>
+			<p>Ingeniería en Telemática</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Duraci&oacute;n</h3>
+			<p>9 semestres</p>
+		</div>
+        <div class="columna-derecha"><img src="../imagenes/item2.png" width="70%"></div><br><br>
+        <div class="columna-izquierda">
+            <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Descripción carrera:            </h3>
+        </div>
+        <p>En la carrera de Ingeniería en Telemática, se prepara a los estudiantes en tres grandes áreas del conocimiento que conforman la carrera y las cuales son:
+
+            <br><br>a)      Las redes de telecomunicaciones, en dicha área del conocimiento se incluyen los temas que tienen que ver con los sistemas de telecomunicaciones de la actualidad, como lo son las redes de área local, las redes de cobertura amplía, las redes convergentes de voz, datos y video, las redes de telefonía celular, los sistemas de microondas terrestres y vía satélite, así como los estándares para instalar la infraestructura de cableado estructurado.
+            
+            <br><br>b)      Las tecnologías de la información, que es el conjunto de aplicaciones basadas en software y equipos informáticos que hacen uso de las redes de telecomunicaciones para la transmisión y ejecución de las mismas; entre un sinnúmero de aplicaciones  encontramos: la programación web, el diseño de bases de datos y de conocimientos, aplicaciones de voz y video, programación para dispositivos móviles y para el posicionamiento de vehículos.
+            
+            <br><br>c)       Los sistemas embebidos, es un área del conocimiento en constante desarrollo industrial y se refiere a sistemas electrónicos que incluyen una micro-computadora, entradas y salidas estándares, conectividad y software. Esta micro-computadora puede adaptarse a casi cualquier tipo de aplicación, siendo su principal ventaja la movilidad y la conectividad; haciendo realidad el concepto de internet de las cosas. Los sistemas embebidos pueden obtener, procesar, transmitir y recibir información de diferentes fuentes incluyendo sensores y dispositivos típicos de entrada/salida. Las aplicaciones en este sector son ilimitadas, por ejemplo, el sector automotriz, los servicios de salud, la automatización de líneas de producción, diversión, comercio, ciudades inteligentes y educación.
+            
+             El programa educativo de Ingeniería en Telemática, se divide en tres ciclos de formación académica, los cuales permiten al estudiante poder optar por por el título de Profesional Asociado en el cuarto semestre, el de Licenciado Técnica en el sexto semestre y el grado de Ingeniero en Telemática al concluir el programa de estudios en su totalidad.
+             <div class="columna-derecha"><img src="../imagenes/item3.png" width="60%" class="img-1"></div>
+
+             Un ingeniero en telemática dispone de un conjunto de habilidades y capacidades para poder gestionar y dirigir proyectos en las áreas del conocimiento que comprenden la carrera, principalmente en los sectores de las telecomunicaciones y de las tecnologías de la información.
+            
+             Los estudiantes de Ingeniería en telemática tienen la oportunidad de complementar las actividades de sus clases cotidianas al hacer uso de laboratorios especializados en las áreas de telecomunicaciones, cableado estructurado, seguridad informática, robótica y el desarrollo de software especializado.
+            
+             Los estudiantes de la carrera de Ingeniería en Telemática tienen la posibilidad de participar en una gran cantidad de actividades del tipo académicas, como lo son las visitas a empresas del sector, en proyectos de investigación aplicada, asistencia a congresos y los intercambios estudiantiles con otras universidades nacionales e internacionales.
+            
+            Continuar con estudios de posgrado a partir de la carrera de Ingeniería en Telemática es una gran posibilidad. Nuestros egresados han optado por complementar sus áreas de conocimientos con especializaciones en las telecomunicaciones, las tecnologías de la información, los negocios y las finanzas.</p>
+            <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Misión del Programa Educativo            </h3>
+            <p>“El Programa Educativo de la carrera de Ingeniería en Telemática está comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del conocimiento en los campos de las telecomunicaciones y la informática. Esta comprometido con la sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación aplicada involucrando alumnos en la solución de problemas de la sociedad. “</p>
+            <cite>ProPE 2016-2017            </cite>
+            <a href="#" class="back-to-top">↑</a>
+            <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Misión del Programa Educativo            </h3>
+            <p>La UPSLP y su programa educativo de Ingeniería en Telemática entregan a la sociedad alumnos formados con los más altos estándares profesionales.</p><br>
+            <ul>
+                <li>Egresados que tienen en su haber competencias pertinentes a las necesidades de su entorno, y son reconocidos en el ámbito laboral por su alto desempeño y calidad personal;
+                </li><br>
+                <li>Un porcentaje significativo de ellos realiza estudios de posgrado en el país o en el extranjero.
+                </li><br>
+                <li>Contarán con certificaciones de importancia en el área, actuales y con reconocimiento internacional.
+                </li><br>
+                <li>Estarán certificados en el dominio del idioma inglés por el British Council.
+                </li><br>
+                <li>Tendrán experiencia práctica adquirida en los laboratorios, en el estudio de casos y en su estancia profesional y,
+                </li><br>
+                <li>El 78% de los PTC tendrán el reconocimiento al Perfil PROMEP, el 89% serán doctores y el 44% de ellos pertenecerá al SNI.
+                </li><br>
+            </ul>
+            <cite>ProPE 2016-2017            </cite><br><br>
+            <p>Los <strong>Objetivos del Plan de Estudios de la Ingeniería en Telemática</strong> que ofrece la Universidad Politécnica de San Luis Potosí, enfatizan cinco aspectos importantes en la formación del Ingeniero, que le confieren una sólida preparación para desempeñarse exitosamente en el mundo laboral:</p>
+       <br> <ol>
+            <li>Capacidad de crear e identificar soluciones para el transporte de información digital (sistemas de comunicación o redes);</li><br>
+            <li>Uso y desarrollo de redes para dispositivos fijos o móviles;</li><br>
+            <li>Aplicación de métodos de investigación para identificar problemas y desarrollar soluciones de manera independiente;</li><br>
+            <li> El dominio del idioma inglés; y</li><br>
+            <li>La adquisición de bases teóricas para continuar con estudios de postgrado.</li><br>
+        </ol>
+         <p>El programa educativo de Ingeniería en Telemática, se divide en tres ciclos de formación académica, los cuales permiten al estudiante poder optar por por el título de Profesional Asociado en el cuarto semestre, el de Licenciado Técnica en el sexto semestre y el grado de Ingeniero en Telemática al concluir el programa de estudios en su totalidad.</p>
+         <p>Un ingeniero en telemática dispone de un conjunto de habilidades y capacidades para poder gestionar y dirigir proyectos en las áreas del conocimiento que comprenden la carrera, principalmente en los sectores de las telecomunicaciones y de las tecnologías de la información.</p>
+         <p>Los estudiantes de Ingeniería en telemática tienen la oportunidad de complementar las actividades de sus clases cotidianas al hacer uso de laboratorios especializados en las áreas de telecomunicaciones, cableado estructurado, seguridad informática, robótica y el desarrollo de software especializado.</p>
+         <p>Los estudiantes de la carrera de Ingeniería en Telemática tienen la posibilidad de participar en una gran cantidad de actividades del tipo académicas, como lo son las visitas a empresas del sector, en proyectos de investigación aplicada, asistencia a congresos y los intercambios estudiantiles con otras universidades nacionales e internacionales.</p>
+         <br><center><iframe class="img-1" width="560" height="315" src="https://www.youtube.com/embed/Pr2z3qRCxqM?si=Pd_Y41w4BmVjLXnT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+         <img src="../imagenes/azul.png" width="100%" height="10px">
+
+         <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="plan">Plan de Estudios:</h3>
+         <input type="checkbox" name="detail-one" id="detail-one" />
+         <details open>
+             <summary>
+               <label for="detail-one">Consulta Plan de Estudios</label>
+             </summary>
+             <div class="content">
+               <img src="../imagenes/item4.png" width="100%" alt=""/>
+             </div>
+           </details><br>
+           <img src="../imagenes/azul.png" width="100%" height="10px">
+           <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="infra">Infraestructura / Recursos:</h3><br>
+           <a href="laboitem.html" style="color: chocolate;"><h2 style="color: #cb5115; font-weight: bold; font-size: 35px; text-align: center;">Ver infraestructura CNT</h2></a>
+           <center><img src="../imagenes/item5.png" width="80%" class="img-1"></center>
+           <br><p>Los estudiantes de la carrera de Ingeniería en Telemática cuentan con acceso a la siguiente infraestructura:           </p>
+           <p>Edificio del Centro de Nuevas Tecnologías           </p>
+        <ol>
+            <li>Laboratorio de Redes (CCNA-Cisco)
+            </li>Laboratorio de Telecomunicaciones
+            <br>
+            <li>Laboratorio de Tecnologías SUN</li><br>
+            <li>Centro de Software Libre</li><br>
+            <li>Laboratorio de Cableado Estructurado (Panduit)</li><br>
+            <li>Laboratorio de Arquitectura de Computadoras</li><br>
+            <li>Laboratorios especializados</li><br>
+        </ol>
+        <p style="text-align: center;">Ingeniería de Software<br>
+            Seguridad Informática<br>
+            Comercio Electrónico<br>
+            Procesamiento Digital</p>
+            <img src="../imagenes/azul.png" width="100%" height="10px"> 
+            <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Certificaciones:</h3><br>
+
+            <ul style="background-color: #4d9dc0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+                <li>Oracle Certified Associate, MySQL 5</li><br>
+                <li>Oracle Certified Professional, MySQL 5.6 Developer</li><br>
+                <li>Oracle Certified Associate, Java SE 5/SE 6</li><br>
+                <li>Oracle Certified Professional, Java SE 6 Programmer</li><br>
+                <li>Oracle Certified Associate, Java SE 7 Programmer</li><br>
+                <li>Oracle Certified Associate, Oracle Solaris 10 Operating System</li><br>
+                <li>Oracle Certified Professional, Oracle Solaris 10 System Administrator</li><br>
+                <li>Oracle Certified Associate, Oracle Solaris 11 System Administrator</li><br>
+              </ul>
+              <img src="../imagenes/azul.png" width="100%" height="10px"> 
+
+              <br><h3 id="campo" style="color: rgb(3, 3, 172); font-weight: bold;">Campo de trabajo:</h3>
+              <p> Los egresados de la carrera de Ingeniería en Telemática tienen la oportunidad de integrarse a múltiples sectores productivos como lo son:              </p><br>
+              <ul style="text-align: center;">
+                <li>La industria de las telecomunicaciones</li><br>
+                <li>La industria de las tecnologías de la información</li><br>
+                <li>La industria de la electrónica</li><br>
+                <li>Empresas de cualquier sector que demanden o requieran la gestión de infraestructura de telecomunicaciones y de redes, así como la gestión de servicios de las tecnologías de la información.</li><br>
+                <li>Instituciones publicas</li><br>
+              </ul>
+              <img src="../imagenes/azul.png" width="100%" height="10px"> 
+
+              <br><h3 id="campo" style="color: rgb(3, 3, 172); font-weight: bold;">Objetivos particulares del PE definidos en el Plan de Desarrollo y Mejora Continua             </h3>
+             <br> <strong><ul style="text-align: center;">
+                <li>Mantener actualizado el PE.                </li><br>
+                <li>Fortalecer el programa de certificaciones avanzadas.</li><br>
+                <li>Fortalecer el equipamiento de laboratorios especializados.</li><br>
+                <li>Mantener una planta docente acorde al número total de alumnos del PE.</li><br>
+                <li>Fortalecer la oficina de Vinculación y Transferencia de Conocimiento.</li><br>
+              </ul></strong>
+              <img src="../imagenes/azul.png" width="100%" height="10px"> 
+
+              <br><h3 style="color: rgb(3, 3, 172); font-weight: bold; text-align: center;" id="cont">Contacto</h3><br>
+              <p style="text-align: center; font-weight: bold; color: black;">Coordinación de Ingeniería en Telemática – Redes y Telecomunicaciones              </p>
+              <p style="text-align: center; font-weight: bold; color: black;">Karina Hernández Leyva</p>
+              <p style="text-align: center;">Asistente de Ingeniería en Telemática (ITEM)              </p>
+              <p style="text-align: center;">Teléfono: (444) 870 – 21 – 00 Ext. 223</p>
+              <p style="text-align: center; font-weight: bold; color: black;">Dr. Juan Antonio Cabrera</p>
+              <p style="text-align: center;">Coordinador de Ing. en Telemática (ITEM)</p>
+              <p style="text-align: center;">item-irtel@upslp.edu.mx</p>
+            </body>
+</html>

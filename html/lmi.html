@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programaci&oacute;n Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		input:checked + details,
+      	details:has(input:checked) {
+        max-height: 1200px; 
+      	}
+		.back-to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 20px;
+    	font-size: 24px;
+    	display: none;
+    	background-color: #007bff;
+    	color: #fff;
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 40px;
+    	text-decoration: none;
+  		}
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		details {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        background: white;
+        transition: max-height 400ms ease-out;
+        max-height: 4rem;
+        overflow: hidden; 
+      }
+
+      
+
+      input {
+        display: none; 
+      }
+
+      
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: #f9a30f;
+        color: #fff;
+        height: 4rem; 
+      }
+
+      label:hover {
+        cursor: pointer;
+      }
+
+      label::before {
+        content: "⏵";
+        font-size: 1.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        transition: rotate 200ms 400ms ease-out;
+      }
+	  
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <h1 style="text-align: center; font-weight: bold;" class="animated-text">Licenciatura en Mercadotecnia Internacional (LMI)</h1>
+        <div class="container">
+			<div class="card"><a style="text-decoration: none; color: black;" href="#descripcion" target="_self">Descripci&oacute;n</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#plan" target="_self">Plan de Estudios</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#infra" target="_self">Infraestructura</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#cont" target="_self">Contacto</a></div>
+		</div><br>
+        <img src="../imagenes/lmi.png" width="100%" height="50%">
+		<a href="https://www.google.com.mx/maps/@22.1231945,-100.9853451,3a,75y,162.21h,73.6t/data=!3m7!1e1!3m5!1sAF1QipPM2UPjkZrm3S8y4ZJdqVL3_wS8jIUJCO7fqmUc!2e10!3e12!7i8000!8i4000?entry=ttu" target="_blank"><img src="../imagenes/lmi1.png" width="100%" height="100px"></a>
+        <div class="columna-izquierda"><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Nivel:</h3>
+			<p>Licenciatura</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Título otorgado:</h3>
+			<p>Licenciado en Mercadotecnia Internacional</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Duraci&oacute;n</h3>
+			<p>9 semestres</p>
+		</div>
+        <div class="columna-derecha"><img class="img-1" src="../imagenes/lmi3.png" width="70%"></div><br><br>
+		<center><br><br><div class="columna-izquierda"><br><br><br><h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="descripcion">Descripci&oacute;n carrera:</h3></div></center>
+        <br><p>Habilidad para la planeación, diseño e implementación de estrategias de comunicación de la empresa como su mercado: campañas de publicidad e imagen, promoción de ventas, ventas personales, relaciones públicas, entre otros.</p>
+        <p>Capacidad para la planeación diseño e implementación de investigaciones de mercado que le permitan obtener la información necesaria para la toma de decisiones en diferentes campos de acción del mercadólogo, como: fijación de precios, desarrollo de nuevos productos, comercialización de productos actuales, estrategias de comunicación y estrategias de distribución.</p>
+        <div class="columna-izquierda">
+			<img src="../imagenes/lmi2.png" width="60%" class="img-1">
+		</div>
+        <p>Elementos de diagnóstico estratégico de mercado que le permitan responder de manera ágil a los cambios del entorno, anticipándose a las tendencias, cambios e innovaciones, para así mantener posicionada a la organización-</p>
+        <p>Desarrollo de habilidades directivas para coordinar diferentes áreas funcionales de la organización, como liderazgo para el e trabajo colaborativo, capacidad para el auto aprendizaje y alto compromiso social.</p>
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="plan">Plan de Estudios:</h3>
+        <p>La carrera de Mercadotecnia Internacional, está comprendida por 9 semestres. en el último semestre se lleva a cabo la estadía y residencia profesional en una empresa del sector productivo. 
+            <input type="checkbox" name="detail-one" id="detail-one" />
+		<details open>
+			<summary>
+			  <label for="detail-one">Consulta Plan de Estudios</label>
+              <img src="../imagenes/lmi4.png">
+			</summary>
+			<div class="content">
+			  <img src="../imagenes/iti4.png" width="100%" alt=""/>
+			</div>
+		  </details><br>
+          <img src="../imagenes/lmi4.png" width="90%">
+		  <img src="../imagenes/azul.png" width="100%" height="10px">
+          <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="infra">Infraestructura / Recursos:</h3><br>
+          <ul style="font-weight: bold; text-align: center;">
+            <li>Centro Integral de Mercadotecnia y Medios Audiovisuales (CIMMA)  <a href="https://www.upslp.edu.mx/upslp/?icemagproducts=cimma-centro-integral-de-mercadotecnia-y-medios-audiovisuales" target="_blank">Ver más.</a></li><br>
+            <li>Cámara de GESELL-Centro de Negocios</li><br>
+            <li>La cámara de Gessel es una habitación acondicionada para permitir la observación con personas. está conformada por dos ambientes separados por un vidrio unilateral, los cuales cuentan con equipos de audio y de video para la grabación de los diferentes experimentos, tales como sesiones de grupo, investigación de mercados, análisis del product</li><br>
+          </ul>
+        </p>
+		<center><img src="../imagenes/lmi5.png" width="90%" class="img-1"></center><br>
+		<ul style="font-weight: bold; text-align: center;">
+			<li>Centro de Información y Documentación.</li><br>
+			<li>Centros y Laboratorios de Cómputo</li><br>
+		</ul>
+		<img src="../imagenes/azul.png" width="100%" height="10px"><br>
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Certificaciones:</h3><br>
+		<ul style="font-weight: bold; text-align: center;">
+			<li>Certificaciones de Inglés por la Universidad de Cambridge.</li><br>
+			<li>Microsoft Office Specialist.</li>
+		</ul>
+		<img src="../imagenes/azul.png" width="100%" height="10px"><br>
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Logros / Distinciones:</h3><br>
+		<ul style="font-weight: bold; text-align: center;">
+			<li>Reconocimiento de CENEVAL como Licenciatura de Alto Rendimiento Académico EGEL Clasificada en el estándar de Rendimiento Académico 1.</li><br>
+			<li>Participación en el Programa de Movilidad Estudiantil de la Warsaw University of Technnology</li><br>
+			<li>Participación en el Certamen Trayectoria de Éxito, A.C.- Medalla de Estudiantes Ejemplares.</li><br>
+			<li>Certificación CIEES 2010.</li><br>
+		</ul>
+		<img src="../imagenes/azul.png" width="100%" height="10px"><br>
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Perfil de egreso:</h3><br>
+		<p>El Licenciado en Mercadotecnia Internacional, es un profesionista especializado en el análisis y diagnóstico de los diferentes mercados en los que una compañía incursiona o en los que planea su expansión.</p>
+    <p> La capacidad directiva de liderazgo de este profesional le permite diseñar estrategias y planes orientados a posicionar a la organización, propiciando que los intercambios comerciales entre las empresas y sus diferentes mercados se lleven a cabo de manera dinámica, rentable y satisfactoria.</p>
+	<center><iframe class="img-1" width="560" height="315" src="https://www.youtube.com/embed/b_SjPkvEfow?si=0zjuxUCqUpVOGYGj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+	<img src="../imagenes/azul.png" width="100%" height="10px">
+	<br><h3 style="color: rgb(3, 3, 172); font-weight: bold; text-align: center;" id="cont">Contacto</h3><br>
+	<p style="text-align: center; font-weight: bold; color: black;">Licenciatura en Mercadotecnia Internacional</p>
+	<p style="text-align: center; font-weight: bold; color: black;">Oneyda María Arista Muñiz</p>
+	<p style="text-align: center;">Asistente de Licenciatura en Mercadotecnia Internacional</p>
+	<p style="text-align: center;">Teléfono: (444) 870 – 21 – 00 Ext. 222</p>
+	<p style="text-align: center; font-weight: bold; color: black;">Mtra. Xóchitl Hernández Velázquez</p>
+	<p style="text-align: center;">Coordinadora de la Licenciatura en Mercadotecnia Internacional</p>
+	<p style="text-align: center;">lmi@upslp.edu.mx</p>
+	<a href="#" class="back-to-top">↑</a>
+
+</body>
+</html>

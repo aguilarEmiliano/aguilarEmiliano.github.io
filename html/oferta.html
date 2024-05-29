@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Oferta Educativa</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+         
+         .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: 30%;
+        }
+        .search-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            align-items: center;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            align-items: center;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+            align-items: center;
+        }
+        .results {
+            margin-top: 20px;
+            width: 60%;
+        }
+        .results ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .results ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <script>
+            const carreras = [
+            { nombre: 'Biología', area: 'Biologia y Quimica' },
+            { nombre: 'Química', area: 'Biologia y Quimica' },
+            { nombre: 'Marketing Digital', area: 'Marketing' },
+            { nombre: 'Marketing Estratégico', area: 'Marketing' },
+            { nombre: 'Programación Web', area: 'Programación' },
+            { nombre: 'Desarrollo de Software', area: 'Programación' },
+            { nombre: 'Telecomunicaciones', area: 'Telematica' },
+            { nombre: 'Redes', area: 'Telematica' },
+            { nombre: 'Administración de Empresas', area: 'Administracion' },
+            { nombre: 'Gestión de Recursos Humanos', area: 'Administracion' }
+            
+        ];
+
+        function searchFunction() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const area = document.getElementById('Variedad').value;
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+            const filteredCarreras = carreras.filter(carrera => 
+                (query && carrera.nombre.toLowerCase().includes(query)) ||
+                (area !== '1' && carrera.area === document.getElementById('Variedad').selectedOptions[0].text)
+            );
+            if (filteredCarreras.length > 0) {
+                const ul = document.createElement('ul');
+                filteredCarreras.forEach(carrera => {
+                    const li = document.createElement('li');
+                    li.textContent = `${carrera.nombre} - ${carrera.area}`;
+                    ul.appendChild(li);
+                });
+                resultsContainer.appendChild(ul);
+            } else {
+                resultsContainer.textContent = 'No se encontraron resultados.';
+            }
+        }
+        </script>
+        <br><center><img src="../imagenes/aspi.png" class="img-1" width="99%" height="400px"></center>
+        <br><h2 style="font-weight: bold; color: rgb(224, 184, 6); text-align: center;">ENCUENTRA EL PROGRAMA ADECUADO PARA TI</h2><br>
+        <br><div class="search-container">
+            <input type="text" id="search" placeholder="Buscar...">
+            <button onclick="searchFunction()">Buscar</button>
+        </div>
+        <br><div class="form-group" >
+            <label class="col-md-4 control-label" for="Variedad" ></label>
+            <div class="col-md-5">
+              <select id="Variedad" name="Variedad" class="form-control" style="background-color: #4f9ff5; color: white; font-weight: bold;">
+                <option value="1" style="background-color: #ffffff; color: black;">Area de conocimiento</option>
+                <option value="2">Biologia y Quimica</option>
+                <option value="3">Marketing</option>
+                <option value="4">Programación</option>
+                <option value="5">Telematica</option>
+                <option value="6">Administracion</option>
+                <option value="7">Milanesa de pollo</option>
+              </select>
+            </div>
+          </div>
+          <div id="results" class="results"></div>
+
+    </body>
+</html>

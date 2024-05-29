@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMA – Centro de Manufactura Avanzada</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+summary {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+summary:hover {
+  background-color: #2980b9;
+}
+
+p {
+  padding: 10px;
+  margin: 0;
+}
+header {
+  background-color: #1086d5;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contenedor > div {
+  width: 50%;
+}
+input:checked + details,
+      	details:has(input:checked) {
+        max-height: 1200px; 
+      	}
+		.back-to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 20px;
+    	font-size: 24px;
+    	display: none;
+    	background-color: #007bff;
+    	color: #fff;
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 40px;
+    	text-decoration: none;
+  		}
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+</style>
+<body>
+    <header>
+  <h1>CMA – Centro de Manufactura Avanzada</h1>
+</header>
+<br><center><img src="../imagenes/itma5.png" width="80%" style="border-radius: 5%;"></center>
+<br><cite style="text-align: center;">CMA – Centro de Manufactura Avanzada es un edificio diseñado y habilitado especialmente para disponer de todas las tecnologías de automatización y control de procesos, de medición, máquinas-herramientas, soldadura y plásticos que atiende las necesidades de prácticas y certificaciones de los estudiantes y se encuentra distribuido de la siguiente manera:</cite>
+<main>
+  <details class="container">
+    <summary>LM 1: Espacio de Trabajo de Laboratorio CIM.</summary>
+    <p style="background-color: #fff; font-size: 20px;">Este laboratorio cuenta con equipamiento para realizar prácticas de Manufactura Integrada por Computadora, Control Numérico y Robótica. El equipo localizado en el laboratorio está constituido por un sistema de Manufactura Integrada por Computadora inteligente (iCIM) de acuerdo al manual de FESTO ® que es la empresa que diseña y provee gran parte del equipamiento.</p>
+    <p style="background-color: white; font-size: 20px;">A su vez el iCIM, está integrado por diferentes estaciones como son: Un sistema de Transporte, una estación AS/RS que proporciona y almacena las piezas de trabajo. Una estación de Ensamble por Robot (Mitsubishi ®), una estación de acoplamiento CNC (torno, fresa y robot (Mitsubishi ®)), un Robot SCARA (Mitsubishi ®) y una celda de control por computadora con software específico. Dedicado.</p>
+    <center><img src="../imagenes/itma6.png" width="50%"></center>
+    <p style="background-color: #fff; font-size: 20px;">Además de los tres robots mencionados se cuenta con un robot Kuka, el cual puede ser integrado al sistema de manufactura, o ser utilizado para prácticas de robótica por medio de brazos articulados de tipo industrial. No forma parte del sistema de manufactura pero si es empleado para realizar prácticas de robótica.</p>
+    <center><img src="../imagenes/itma7.png" width="50%"></center>
+</details>
+<details class="container">
+  <summary>LM2: Laboratorio CAD/CAM.</summary>
+  <center><img src="../imagenes/itma8.png" width="100%"></center>
+</details>
+<details class="container">
+    <summary>LM3: Formación e Inyección de Plásticos</summary>
+    <center><img src="../imagenes/itma9.png" width="100%"></center>
+  </details>
+  <details class="container">
+    <summary>LM4: Laboratorio de Fusión y Tratamiento Térmico Ferroso y no Ferroso</summary>
+    <center><img src="../imagenes/itma10.png" width="100%"></center>
+  </details>
+  <details class="container">
+    <summary>LM5: Laboratorio de Máquinas-Herramientas.</summary>
+    <center><img src="../imagenes/itma11.png" width="100%"></center>
+  </details>
+
+<br><h3>Coordinación de Ingeniería en Tecnologías de Manufactura (ITMA)</h3>
+<br><h3 style="color: orange;">itma@upslp.edu.mx</h3>
+
+</main>
+<a href="#" class="back-to-top">↑</a>
+
+</body>
+</html>

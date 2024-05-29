@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+    }
+
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    h2{
+        color: rgb(96, 15, 217);
+        font-size: 35px;
+    }
+
+    label{
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    input, textarea{
+        margin-bottom: 20px;
+        padding: 17px 25px;
+        margin-top: 10px;
+        background-color: #EDFFF0;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        color: black;
+        outline: none;
+    }
+
+    input::placeholder, textarea::placeholder{
+        color: #b5cab6;
+    }
+
+    .form-txt{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .form-txt a{
+        color: rgb(106, 165, 18);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .btn{
+        font-size: 16px;
+        color: white;
+        border: 0;
+        border-radius: 25px;
+        background-color: #51D94C;
+        box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: #730cda;
+    }
+
+    @media(max-width:991px){
+        body{
+            padding: 30px;
+        }
+        form{
+            padding: 50px 30px;
+            width: 100px;
+        }
+
+        input{
+            padding: 15px;
+        }
+    }
+</style>
+<body>
+    <form action="https://formsubmit.co/rochaluis.m3d@gmail.com" method="POST">
+        <h2 >Formulario de Contacto</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <div class="form-txt">
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos y Condiciones</a>
+            </div>
+
+            <input class="btn" type="submit" value="Enviar">
+
+        </div>
+    </form>
+</body>
+</html>

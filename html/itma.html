@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	  <title>Programaci&oacute;n Web I</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="../estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="../estilo/sitio.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <style>
+        .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		input:checked + details,
+      	details:has(input:checked) {
+        max-height: 1200px; 
+      	}
+		.back-to-top {
+    	position: fixed;
+    	bottom: 20px;
+    	right: 20px;
+    	font-size: 24px;
+    	display: none;
+    	background-color: #007bff;
+    	color: #fff;
+    	width: 40px;
+    	height: 40px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 40px;
+    	text-decoration: none;
+  		}
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .container{
+			display: flex;
+		}
+		.card{
+			border-radius: 20px;
+			margin-left: 5px;
+			height: 30px;
+			width: 100px;
+			background-color: #5d91e5;
+			flex: 1;
+			transition: .3s all ease;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card:hover{
+            flex: 2;
+			background-color: rgb(195, 201, 26);
+        }
+
+		details {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+        background: white;
+        transition: max-height 400ms ease-out;
+        max-height: 4rem;
+        overflow: hidden; 
+      }
+
+      
+
+      input {
+        display: none; 
+      }
+
+      
+      label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: #f9a30f;
+        color: #fff;
+        height: 4rem; 
+      }
+
+      label:hover {
+        cursor: pointer;
+      }
+
+      label::before {
+        content: "⏵";
+        font-size: 1.5rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        transition: rotate 200ms 400ms ease-out;
+      }
+	  
+    </style>
+    <body>
+        <script src="../script/funciones.js"></script>
+        <h1 style="text-align: center; font-weight: bold;" class="animated-text">Ingeniería en Tecnologías de Manufactura (ITMA)</h1>
+        <div class="container">
+			<div class="card"><a style="text-decoration: none; color: black;" href="#descripcion" target="_self">Descripci&oacute;n</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#plan" target="_self">Plan de Estudios</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#infra" target="_self">Infraestructura</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#campo" target="_self">Campo de Trabajo</a></div>
+			<div class="card"><a style="text-decoration: none; color: black;" href="#cont" target="_self">Contacto</a></div>
+		</div><br>
+		<img src="../imagenes/itma.png" width="100%" height="50%">
+        <a href="https://www.google.com.mx/maps/@22.1233665,-100.9824477,3a,90y,85.28h,77.06t/data=!3m7!1e1!3m5!1sAF1QipN7F22XHylxTTqs3xkmO2rWnjdNl136HAS7RmT-!2e10!3e12!7i8000!8i4000?entry=ttu" target="_blank"><img src="../imagenes/itma1.png" width="100%" height="100px"></a>
+        <div class="columna-izquierda"><h3 style="color: rgb(3, 3, 172); font-weight: bold;">Nivel:</h3>
+			<p>Licenciatura</p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Título otorgado:</h3>
+			<p>Ingeniería en Tecnologías de Manufactura.            </p>
+			<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Duraci&oacute;n</h3>
+			<p>9 semestres</p>
+		</div>
+		<div class="columna-derecha"><img src="../imagenes/itma4.png" width="70%"></div><br><br>
+		<center><br><br><div class="columna-izquierda"><br><br><br><h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="descripcion">Descripci&oacute;n carrera:</h3></div></center>
+		<p>La carrera de Ingeniería en Tecnologías de Manufactura (ITMA), ha sido diseñada para cubrir diferentes funciones dentro del sector industrial, teniendo como sus tres pilares modulares, la automatización y control de procesos, el diseño avanzado y la administración de procesos. El conocimiento es transmitido a los estudiantes mediante el enfoque de competencias, permitiendo así, mejorar sus habilidades y destrezas tanto sociales como cognitivas para enfrentar los desafíos en diferentes ámbitos laborales.  Al inicio de su carrera, se tienen las asignaturas básicas que sustentan estos tres pilares mencionados, donde se establecen las leyes físicas, el razonamiento matemático y lógico, así como, la socialización del estudiante con su entorno.</p>
+		<div class="columna-izquierda">
+			<img src="../imagenes/itma2.png" width="60%" class="img-1">
+		</div>
+<p style="text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: justify;">La administración, le permite al estudiante mejorar aspectos de calidad de procesos y productos, así como, la coordinación y dirección de personal, mientras que el diseño avanzado genera una visión más allá de la aplicación técnica del conocimiento que, combinada con la automatización y control de procesos incrementa el campo de acción del egresado
+
+    <br><br>El uso de las tecnologías para el proceso enseñanza-aprendizaje, es una constante en el quehacer del estudiante, iniciando con software calificado para el desarrollo de prácticas (en los primeros semestres), hasta la utilización de tecnologías de automatización y control (a partir del cuarto semestre), así como, el manejo de máquinas-herramientas, sistemas de medición e inyectora de plásticos, dando como resultado un aprendizaje significativo que le permita una mejor inserción y adaptación al campo laboral. Una de las mayores fortalezas de la carrera es sin lugar a dudas el Centro de Manufactura Avanzada, el cual ha sido avalado y reconocido por la empresa FESTO ® como un Centro de Entrenamiento Certificador FESTO (FACT), donde se desarrollan las prácticas de los estudiantes y se realizan exámenes prácticos de certificación.
+    
+    <br><br>Al término de las asignaturas, los alumnos de ITMA deberán desarrollar un trabajo de residencia profesional, el cual consiste, en laborar durante 480 h Como mínimo en una empresa con la encomienda de realizar un proyecto avalado tanto por la empresa como por la universidad y que es considerado como parte de su evaluación de proyecto profesional.
+    
+    <br><br>Los estudiantes de ITMA, cuentan además con un club de robótica donde pueden participar en competencias tanto nacionales como internacionales, esto les permite también, mejorar sus habilidades y destrezas desarrollando aún más el razonamiento lógico y la programación.
+    
+    <br><br>Se cuenta también, con un programa de inserción laboral preliminar de los estudiantes en el sector industrial llamado COOP el cual está diseñado para aquellos alumnos que se encuentren del sexto semestre en adelante, con mejor promedio y buen dominio del idioma inglés. Consiste en permitir a la mitad de un grupo de alumnos (normalmente reducido) y que cumpla con los requisitos mencionados, para que asistan durante un periodo de tres meses a la industria, mientras la otra mitad estudia generando un proceso de aprendizaje Universidad-empresa.</p>
+<center><iframe class="img-1" width="560" height="315" src="https://www.youtube.com/embed/nK0bznnBLmg?si=wmi-mwY2nLRZbxfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+<img src="../imagenes/azul.png" width="100%" height="10px">
+<h3 style="color: rgb(3, 3, 172); font-weight: bold;">Perfil de Ingreso</h3>
+<p>El aspirante, al ingresar al Programa Educativo de Ingeniería en Tecnologías de Manufactura deberá contar, preferentemente, con lo siguiente:
+</p><br>
+<ul style="text-align: center;">
+    <li>Gusto por los procesos de producción, automatización y diseño de procesos de manufactura del sector industrial.</li><br>
+    <li>Interés para desarrollarse profesionalmente en empresas manufactureras de la industria automotriz, metalmecánica, alimenticia, aeronáutica, de fundición, industrialización del hule, químicas, así como centros de investigación y desarrollo tecnológico.</li><br>
+    <li>Bases sólidas en el área de las Ciencias de Física y Matemáticas.</li><br>
+    <li>Habilidad para aprender idiomas.</li><br>
+    <li>Espíritu emprendedor y creativo.</li><br>
+</ul>
+<img src="../imagenes/azul.png" width="100%" height="10px">
+		<h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="plan">Plan de Estudios:</h3>
+		<input type="checkbox" name="detail-one" id="detail-one" />
+		<details open>
+			<summary>
+			  <label for="detail-one">Consulta Plan de Estudios</label>
+			</summary>
+			<div class="content">
+			  <img src="../imagenes/itma3.png" width="100%" alt=""/>
+			</div>
+		  </details><br>
+		  <img src="../imagenes/azul.png" width="100%" height="10px">
+          <h3 style="color: rgb(3, 3, 172); font-weight: bold;" id="infra">Infraestructura / Recursos:</h3><br>
+		  <a href="laboitma.html" style="color: chocolate;"><h2 style="color: #cb5115; font-weight: bold; font-size: 35px; text-align: center;">Ver CMA</h2></a>
+		  <center><img src="../imagenes/itma12.png" width="80%" class="img-1"></center>
+          <img src="../imagenes/azul.png" width="100%" height="10px">
+          <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Certificaciones:</h3><br>
+		  <center><img src="../imagenes/iti19.png" width="50%"></center>
+		  <ul style="background-color: #4d9dc0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px; color: black;">
+			<li>Oracle Certified Associate, MySQL 5</li><br>
+			<li>Oracle Certified Professional, MySQL 5.6 Developer</li><br>
+			<li>Oracle Certified Associate, Java SE 5/SE 6</li><br>
+			<li>Oracle Certified Professional, Java SE 6 Programmer</li><br>
+			<li>Oracle Certified Associate, Java SE 7 Programmer</li><br>
+			<li>Oracle Certified Associate, Oracle Solaris 10 Operating System</li><br>
+			<li>Oracle Certified Professional, Oracle Solaris 10 System Administrator</li><br>
+			<li>Oracle Certified Associate, Oracle Solaris 11 System Administrator</li><br>
+		  </ul>
+          <p>Se cuenta también con la certificación Lab View (CLAD)
+
+            Como puede verse, las certificaciones están inherentemente relacionadas con la mayoría del equipamiento con el que cuentan los laboratorios de ITMA. También se tienen los siguientes cursos de los cuales aunque no se certifican, si juegan un papel importante en el desarrollo de las competencias para un Ingeniero en Tecnologías de Manufactura </p>
+            <h3 style="color: rgb(3, 3, 172); font-weight: bold;">Logros</h3><br>
+            <center><img src="../imagenes/itma13.png" width="90%"></center>
+            <img src="../imagenes/azul.png" width="100%" height="10px">
+            <br><h3 id="campo" style="color: rgb(3, 3, 172); font-weight: bold;">Campo de trabajo:</h3><br>
+<p style="text-align: center; font-weight: bold;">El ingeniero en Tecnologías de Manufactura egresado de la UPSLP adquiere competencias necesarias como para desarrollarse profesionalmente en todas y cada una de las empresas manufactureras como por ejemplo químicas, metalmecánicas, alimenticias, automotrices, aeronáuticas, de fundición, industrialización del hule, plásticos, mineras, farmacéuticas, centros de investigación y desarrollo tecnológico, entre otras.
+</p>
+<img src="../imagenes/azul.png" width="100%" height="10px">
+<br><h3 style="color: rgb(3, 3, 172); font-weight: bold; text-align: center;" id="cont">Contacto</h3><br>
+<p style="text-align: center; font-weight: bold; color: black;">Ingeniería en Tecnologías de Manufactura (ITMA)</p>
+		<p style="text-align: center; font-weight: bold; color: black;">Lic. Graciela Nava Palacios.</p>
+		<p style="text-align: center;">Asistente de Ingeniería en Tecnologías de Manufactura</p>
+		<p style="text-align: center;">Teléfono: (444) 870 – 21 – 00 Ext. 253</p>
+		<p style="text-align: center; font-weight: bold; color: black;">Dr. Margarito Martínez Cruz</p>
+		<p style="text-align: center;">Coordinador de Ingeniería en Tecnologías de Manufactura</p>
+		<p style="text-align: center;">itma@upslp.edu.mx</p>
+            <a href="#" class="back-to-top">↑</a>
+
+        </body>
+</html>

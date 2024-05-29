@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web I</title>
+</head>
+<body>
+    <script>
+        function iniciarSesion() {
+            const usuarioCorrecto = "admin";
+            const contraseñaCorrecta = "12345";
+            let usuario;
+            let contraseña;
+
+            
+            while (true) {
+                usuario = prompt("Ingrese su nombre de usuario:");
+                contraseña = prompt("Ingrese su contraseña:");
+
+                if (usuario === null || contraseña === null) {
+                    console.log("Proceso de inicio de sesión cancelado.");
+                    break; 
+                }
+
+                if (usuario === usuarioCorrecto && contraseña === contraseñaCorrecta) {
+                    console.log("Inicio de sesión exitoso. Bienvenido, " + usuario + "!");
+                    break; 
+                } else {
+                    alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.");
+                }
+            }
+        }
+
+        window.onload = iniciarSesion;
+    </script>
+</body>
+</html>
